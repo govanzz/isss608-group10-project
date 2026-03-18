@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -132,10 +97,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./proposal.qmd"> 
 <span class="menu-text">Proposal</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./methodology.qmd"> 
-<span class="menu-text">Methodology</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-methodology" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Methodology</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-methodology">    
+        <li>
+    <a class="dropdown-item" href="https://isss608-ay2026.netlify.app/take-home_ex/take-home_exercise02/take-home_exercise02">
+ <span class="dropdown-text">EDA &amp; CDA</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="https://iss608-g1-2026.netlify.app/take-home_ex/take-home_ex02/take_home_ex02">
+ <span class="dropdown-text">Clustering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://isss608-visual-analytics-gautamgovan.netlify.app/take_home_exercise/take_home_exercise_2/take_home_exercise_2">
+ <span class="dropdown-text">Predictive Modelling (Part A)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://isss608-visual-analytics-gautamgovan.netlify.app/take_home_exercise/take_home_exercise_2b/take_home_exercise_2b">
+ <span class="dropdown-text">Predictive Modelling (Part B)</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./findings.qmd"> 
 <span class="menu-text">Findings</span></a>
@@ -174,8 +158,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cofinfad-colombian-fintech-financial-analysis" id="toc-cofinfad-colombian-fintech-financial-analysis" class="nav-link active" data-scroll-target="#cofinfad-colombian-fintech-financial-analysis">COFINFAD: Colombian Fintech Financial Analysis</a>
+  <ul class="collapse">
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#the-objective" id="toc-the-objective" class="nav-link" data-scroll-target="#the-objective">The Objective</a></li>
+  <li><a href="#project-components" id="toc-project-components" class="nav-link" data-scroll-target="#project-components">Project Components</a>
+  <ul class="collapse">
+  <li><a href="#exploratory-analysis" id="toc-exploratory-analysis" class="nav-link" data-scroll-target="#exploratory-analysis">1. Exploratory Analysis</a></li>
+  <li><a href="#clustering-analysis" id="toc-clustering-analysis" class="nav-link" data-scroll-target="#clustering-analysis">2. Clustering Analysis</a></li>
+  <li><a href="#predictive-modelling" id="toc-predictive-modelling" class="nav-link" data-scroll-target="#predictive-modelling">3. Predictive Modelling</a></li>
+  </ul></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
+  <li><a href="#website-structure" id="toc-website-structure" class="nav-link" data-scroll-target="#website-structure">Website Structure</a></li>
+  <li><a href="#current-status" id="toc-current-status" class="nav-link" data-scroll-target="#current-status">Current Status</a></li>
+  <li><a href="#team-contribution-overview" id="toc-team-contribution-overview" class="nav-link" data-scroll-target="#team-contribution-overview">Team Contribution Overview</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -199,16 +203,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="cofinfad-colombian-fintech-financial-analysis" class="level1">
+<h1>COFINFAD: Colombian Fintech Financial Analysis</h1>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This project examines customer transaction behaviour within the Colombian fintech ecosystem using the <strong>COFINFAD</strong> dataset. The overall objective is to understand how socio-demographic and behavioural factors shape customer financial activity, digital engagement, and satisfaction outcomes.</p>
+<p>The project combines multiple visual analytics approaches to study customer behaviour from different perspectives, including <strong>exploratory analysis</strong>, <strong>customer segmentation</strong>, and <strong>predictive modelling</strong>.</p>
+</section>
+<section id="the-objective" class="level2">
+<h2 class="anchored" data-anchor-id="the-objective">The Objective</h2>
+<p>The objective of this project is to understand the behaviours behind customer transactions and how socio-demographic factors, such as age, income, education, and household characteristics, affect financial activity within the Colombian fintech ecosystem.</p>
+<p>By applying visual analytics and statistical techniques, the project aims to identify meaningful customer patterns, detect behavioural differences across demographic groups, and generate insights that support better interpretation of fintech user behaviour.</p>
+</section>
+<section id="project-components" class="level2">
+<h2 class="anchored" data-anchor-id="project-components">Project Components</h2>
+<p>This group project consists of three main analytical components:</p>
+<section id="exploratory-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-analysis">1. Exploratory Analysis</h3>
+<p>This component investigates the relationship between socio-demographic characteristics and transaction behaviour. It focuses on descriptive statistics, exploratory visualizations, and confirmatory analysis to identify patterns in transaction count, average transaction value, and total transaction volume.</p>
+</section>
+<section id="clustering-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="clustering-analysis">2. Clustering Analysis</h3>
+<p>This component applies customer segmentation techniques to identify groups of users with similar behavioural, financial, and engagement profiles. Clustering helps reveal distinct customer segments such as mainstream users, high-value users, and digitally engaged users.</p>
+</section>
+<section id="predictive-modelling" class="level3">
+<h3 class="anchored" data-anchor-id="predictive-modelling">3. Predictive Modelling</h3>
+<p>This component develops predictive models to examine two important outcomes within the Colombian fintech ecosystem: **customer satisfaction** and **customer transaction behaviour**. Using demographic, behavioural, and digital engagement variables, the analysis evaluates how well customer attributes explain both customer experience and financial activity on the platform.</p>
+</section>
+</section>
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
+<p>The analysis uses the <strong>COFINFAD dataset</strong>, which contains customer-level and transaction-level data from a Colombian fintech environment.</p>
+<p>The dataset includes: - socio-demographic attributes - behavioural and engagement variables - transaction frequency and value measures - customer satisfaction indicators - customer segmentation and financial activity features</p>
+</section>
+<section id="website-structure" class="level2">
+<h2 class="anchored" data-anchor-id="website-structure">Website Structure</h2>
+<p>This website documents the development of the project across multiple stages, including:</p>
+<ul>
+<li>project proposal</li>
+<li>methodology</li>
+<li>findings</li>
+<li>poster</li>
+<li>meeting minutes</li>
+<li>team contributions</li>
+<li>Shiny application</li>
+</ul>
+</section>
+<section id="current-status" class="level2">
+<h2 class="anchored" data-anchor-id="current-status">Current Status</h2>
+<p>This website is currently being developed as part of the <strong>ISSS608 Visual Analytics</strong> group project. Additional content, analysis outputs, and application components will be added progressively.</p>
+</section>
+<section id="team-contribution-overview" class="level2">
+<h2 class="anchored" data-anchor-id="team-contribution-overview">Team Contribution Overview</h2>
+<p>Each group member contributes an individual analytical component that supports the overall project objective:</p>
+<ul>
+<li><strong>Exploratory Analysis</strong> — socio-demographic correlation and transaction behaviour</li>
+<li><strong>Clustering Analysis</strong> — customer segmentation using behavioural and engagement variables</li>
+<li><strong>Predictive Modelling</strong> — modelling Customer Satisfaction and Transaction Behaviour</li>
+</ul>
+<hr>
+<p>Developed for <strong>ISSS608 Visual Analytics</strong>.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -2,10 +2,66 @@
 title: "isss608-group10-project"
 ---
 
-This is a Quarto website.
+# COFINFAD: Colombian Fintech Financial Analysis
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Project Overview
 
-```{r}
-1 + 1
-```
+This project examines customer transaction behaviour within the Colombian fintech ecosystem using the **COFINFAD** dataset. The overall objective is to understand how socio-demographic and behavioural factors shape customer financial activity, digital engagement, and satisfaction outcomes.
+
+The project combines multiple visual analytics approaches to study customer behaviour from different perspectives, including **exploratory analysis**, **customer segmentation**, and **predictive modelling**.
+
+## The Objective
+
+The objective of this project is to understand the behaviours behind customer transactions and how socio-demographic factors, such as age, income, education, and household characteristics, affect financial activity within the Colombian fintech ecosystem.
+
+By applying visual analytics and statistical techniques, the project aims to identify meaningful customer patterns, detect behavioural differences across demographic groups, and generate insights that support better interpretation of fintech user behaviour.
+
+## Project Components
+
+This group project consists of three main analytical components:
+
+### 1. Exploratory Analysis
+
+This component investigates the relationship between socio-demographic characteristics and transaction behaviour. It focuses on descriptive statistics, exploratory visualizations, and confirmatory analysis to identify patterns in transaction count, average transaction value, and total transaction volume.
+
+### 2. Clustering Analysis
+
+This component applies customer segmentation techniques to identify groups of users with similar behavioural, financial, and engagement profiles. Clustering helps reveal distinct customer segments such as mainstream users, high-value users, and digitally engaged users.
+
+### 3. Predictive Modelling
+
+This component develops predictive models to examine two important outcomes within the Colombian fintech ecosystem: \*\*customer satisfaction\*\* and \*\*customer transaction behaviour\*\*. Using demographic, behavioural, and digital engagement variables, the analysis evaluates how well customer attributes explain both customer experience and financial activity on the platform.
+
+## Dataset
+
+The analysis uses the **COFINFAD dataset**, which contains customer-level and transaction-level data from a Colombian fintech environment.
+
+The dataset includes: - socio-demographic attributes - behavioural and engagement variables - transaction frequency and value measures - customer satisfaction indicators - customer segmentation and financial activity features
+
+## Website Structure
+
+This website documents the development of the project across multiple stages, including:
+
+-   project proposal
+-   methodology
+-   findings
+-   poster
+-   meeting minutes
+-   team contributions
+-   Shiny application
+
+## Current Status
+
+This website is currently being developed as part of the **ISSS608 Visual Analytics** group project. Additional content, analysis outputs, and application components will be added progressively.
+
+## Team Contribution Overview
+
+Each group member contributes an individual analytical component that supports the overall project objective:
+
+-   **Exploratory Analysis** — socio-demographic correlation and transaction behaviour
+-   **Clustering Analysis** — customer segmentation using behavioural and engagement variables
+-   **Predictive Modelling** — modelling Customer Satisfaction and Transaction Behaviour
+
+------------------------------------------------------------------------
+
+Developed for **ISSS608 Visual Analytics**.

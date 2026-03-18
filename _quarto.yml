@@ -10,8 +10,16 @@ website:
         text: Home
       - href: proposal.qmd
         text: Proposal
-      - href: methodology.qmd
-        text: Methodology
+      - text: Methodology
+        menu:
+          - text: EDA & CDA
+            href: https://isss608-ay2026.netlify.app/take-home_ex/take-home_exercise02/take-home_exercise02
+          - text: Clustering
+            href: https://iss608-g1-2026.netlify.app/take-home_ex/take-home_ex02/take_home_ex02
+          - text: Predictive Modelling (Part A)
+            href: https://isss608-visual-analytics-gautamgovan.netlify.app/take_home_exercise/take_home_exercise_2/take_home_exercise_2
+          - text: Predictive Modelling (Part B)
+            href: https://isss608-visual-analytics-gautamgovan.netlify.app/take_home_exercise/take_home_exercise_2b/take_home_exercise_2b
       - href: findings.qmd
         text: Findings
       - href: poster.qmd
