@@ -218,7 +218,7 @@ The proposed Shiny application will consist of three main modules:
 
 ---
 
-## 6. Expected Value
+## Expected Value
 
 This project provides:
 
