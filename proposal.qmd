@@ -208,7 +208,7 @@ The proposed Shiny application will consist of three main modules:
 
 ##  Project Timeline and Work Allocation
 
-![](ganttcchart.jpg)
+![](ganttchart.jpeg)
 
 ### Team Responsibilities
 
