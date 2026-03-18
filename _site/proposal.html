@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Gautamgovan Elangovan, Ng Meng Ye, Chandru Kolanchiyappan">
 
-<title>COFINFAD Analysis – ISSS608 Group 10 Project</title>
+<title>COFINFAD: Colombian Fintech Financial Analysis – ISSS608 Group 10 Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,11 +91,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./proposal.html"> 
+    <a class="nav-link active" href="./proposal.html" aria-current="page"> 
 <span class="menu-text">Proposal</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -163,21 +164,34 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cofinfad-colombian-fintech-financial-analysis" id="toc-cofinfad-colombian-fintech-financial-analysis" class="nav-link active" data-scroll-target="#cofinfad-colombian-fintech-financial-analysis">COFINFAD: Colombian Fintech Financial Analysis</a>
+  <li><a href="#project-motivation-objective" id="toc-project-motivation-objective" class="nav-link active" data-scroll-target="#project-motivation-objective"><span class="header-section-number">1</span> Project Motivation &amp; Objective</a>
   <ul class="collapse">
-  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
-  <li><a href="#the-objective" id="toc-the-objective" class="nav-link" data-scroll-target="#the-objective">The Objective</a></li>
-  <li><a href="#project-components" id="toc-project-components" class="nav-link" data-scroll-target="#project-components">Project Components</a>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation"><span class="header-section-number">1.1</span> Motivation</a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective"><span class="header-section-number">1.2</span> Objective</a></li>
+  </ul></li>
+  <li><a href="#data-overview-cofinfad-dataset" id="toc-data-overview-cofinfad-dataset" class="nav-link" data-scroll-target="#data-overview-cofinfad-dataset"><span class="header-section-number">2</span> Data Overview: COFINFAD Dataset</a>
   <ul class="collapse">
-  <li><a href="#exploratory-analysis" id="toc-exploratory-analysis" class="nav-link" data-scroll-target="#exploratory-analysis">1. Exploratory Analysis</a></li>
-  <li><a href="#clustering-analysis" id="toc-clustering-analysis" class="nav-link" data-scroll-target="#clustering-analysis">2. Clustering Analysis</a></li>
-  <li><a href="#predictive-modelling" id="toc-predictive-modelling" class="nav-link" data-scroll-target="#predictive-modelling">3. Predictive Modelling</a></li>
+  <li><a href="#data-structure" id="toc-data-structure" class="nav-link" data-scroll-target="#data-structure"><span class="header-section-number">2.1</span> Data Structure</a></li>
+  <li><a href="#key-variable-categories" id="toc-key-variable-categories" class="nav-link" data-scroll-target="#key-variable-categories"><span class="header-section-number">2.2</span> Key Variable Categories</a></li>
   </ul></li>
-  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
-  <li><a href="#website-structure" id="toc-website-structure" class="nav-link" data-scroll-target="#website-structure">Website Structure</a></li>
-  <li><a href="#current-status" id="toc-current-status" class="nav-link" data-scroll-target="#current-status">Current Status</a></li>
-  <li><a href="#team-contribution-overview" id="toc-team-contribution-overview" class="nav-link" data-scroll-target="#team-contribution-overview">Team Contribution Overview</a></li>
+  <li><a href="#analytical-framework-integrated-approach" id="toc-analytical-framework-integrated-approach" class="nav-link" data-scroll-target="#analytical-framework-integrated-approach"><span class="header-section-number">3</span> Analytical Framework (Integrated Approach)</a>
+  <ul class="collapse">
+  <li><a href="#exploratory-confirmatory-analysis-eda-cda" id="toc-exploratory-confirmatory-analysis-eda-cda" class="nav-link" data-scroll-target="#exploratory-confirmatory-analysis-eda-cda"><span class="header-section-number">3.1</span> Exploratory &amp; Confirmatory Analysis (EDA &amp; CDA)</a></li>
+  <li><a href="#customer-segmentation-k-means-clustering" id="toc-customer-segmentation-k-means-clustering" class="nav-link" data-scroll-target="#customer-segmentation-k-means-clustering"><span class="header-section-number">3.2</span> Customer Segmentation (K-Means Clustering)</a></li>
+  <li><a href="#predictive-modelling" id="toc-predictive-modelling" class="nav-link" data-scroll-target="#predictive-modelling"><span class="header-section-number">3.3</span> Predictive Modelling</a></li>
+  <li><a href="#integrated-insight" id="toc-integrated-insight" class="nav-link" data-scroll-target="#integrated-insight"><span class="header-section-number">3.4</span> Integrated Insight</a></li>
   </ul></li>
+  <li><a href="#proposed-visual-analytics-application" id="toc-proposed-visual-analytics-application" class="nav-link" data-scroll-target="#proposed-visual-analytics-application"><span class="header-section-number">4</span> 4. Proposed Visual Analytics Application</a>
+  <ul class="collapse">
+  <li><a href="#exploratory-analysis-module" id="toc-exploratory-analysis-module" class="nav-link" data-scroll-target="#exploratory-analysis-module"><span class="header-section-number">4.1</span> Exploratory Analysis Module</a></li>
+  <li><a href="#customer-segmentation-module" id="toc-customer-segmentation-module" class="nav-link" data-scroll-target="#customer-segmentation-module"><span class="header-section-number">4.2</span> Customer Segmentation Module</a></li>
+  <li><a href="#predictive-analytics-module" id="toc-predictive-analytics-module" class="nav-link" data-scroll-target="#predictive-analytics-module"><span class="header-section-number">4.3</span> Predictive Analytics Module</a></li>
+  </ul></li>
+  <li><a href="#project-timeline-and-work-allocation" id="toc-project-timeline-and-work-allocation" class="nav-link" data-scroll-target="#project-timeline-and-work-allocation"><span class="header-section-number">5</span> Project Timeline and Work Allocation</a>
+  <ul class="collapse">
+  <li><a href="#team-responsibilities" id="toc-team-responsibilities" class="nav-link" data-scroll-target="#team-responsibilities"><span class="header-section-number">5.1</span> Team Responsibilities</a></li>
+  </ul></li>
+  <li><a href="#expected-value" id="toc-expected-value" class="nav-link" data-scroll-target="#expected-value"><span class="header-section-number">6</span> 6. Expected Value</a></li>
   </ul>
 </nav>
     </div>
@@ -186,13 +200,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">COFINFAD Analysis</h1>
+<h1 class="title">COFINFAD: Colombian Fintech Financial Analysis</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Gautamgovan Elangovan, Ng Meng Ye, Chandru Kolanchiyappan </p>
+          </div>
+  </div>
     
   
     
@@ -203,69 +223,301 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="cofinfad-colombian-fintech-financial-analysis" class="level1">
-<h1>COFINFAD: Colombian Fintech Financial Analysis</h1>
-<section id="project-overview" class="level2">
-<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>This project examines customer transaction behaviour within the Colombian fintech ecosystem using the <strong>COFINFAD</strong> dataset. The overall objective is to understand how socio-demographic and behavioural factors shape customer financial activity, digital engagement, and satisfaction outcomes.</p>
-<p>The project combines multiple visual analytics approaches to study customer behaviour from different perspectives, including <strong>exploratory analysis</strong>, <strong>customer segmentation</strong>, and <strong>predictive modelling</strong>.</p>
-</section>
-<section id="the-objective" class="level2">
-<h2 class="anchored" data-anchor-id="the-objective">The Objective</h2>
-<p>The objective of this project is to understand the behaviours behind customer transactions and how socio-demographic factors, such as age, income, education, and household characteristics, affect financial activity within the Colombian fintech ecosystem.</p>
-<p>By applying visual analytics and statistical techniques, the project aims to identify meaningful customer patterns, detect behavioural differences across demographic groups, and generate insights that support better interpretation of fintech user behaviour.</p>
-</section>
-<section id="project-components" class="level2">
-<h2 class="anchored" data-anchor-id="project-components">Project Components</h2>
-<p>This group project consists of three main analytical components:</p>
-<section id="exploratory-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-analysis">1. Exploratory Analysis</h3>
-<p>This component investigates the relationship between socio-demographic characteristics and transaction behaviour. It focuses on descriptive statistics, exploratory visualizations, and confirmatory analysis to identify patterns in transaction count, average transaction value, and total transaction volume.</p>
-</section>
-<section id="clustering-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="clustering-analysis">2. Clustering Analysis</h3>
-<p>This component applies customer segmentation techniques to identify groups of users with similar behavioural, financial, and engagement profiles. Clustering helps reveal distinct customer segments such as mainstream users, high-value users, and digitally engaged users.</p>
-</section>
-<section id="predictive-modelling" class="level3">
-<h3 class="anchored" data-anchor-id="predictive-modelling">3. Predictive Modelling</h3>
-<p>This component develops predictive models to examine two important outcomes within the Colombian fintech ecosystem: **customer satisfaction** and **customer transaction behaviour**. Using demographic, behavioural, and digital engagement variables, the analysis evaluates how well customer attributes explain both customer experience and financial activity on the platform.</p>
-</section>
-</section>
-<section id="dataset" class="level2">
-<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
-<p>The analysis uses the <strong>COFINFAD dataset</strong>, which contains customer-level and transaction-level data from a Colombian fintech environment.</p>
-<p>The dataset includes: - socio-demographic attributes - behavioural and engagement variables - transaction frequency and value measures - customer satisfaction indicators - customer segmentation and financial activity features</p>
-</section>
-<section id="website-structure" class="level2">
-<h2 class="anchored" data-anchor-id="website-structure">Website Structure</h2>
-<p>This website documents the development of the project across multiple stages, including:</p>
+<section id="project-motivation-objective" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="project-motivation-objective"><span class="header-section-number">1</span> Project Motivation &amp; Objective</h2>
+<p>The Colombian fintech sector has experienced rapid growth, reaching nearly 400 companies by 2024. Despite this expansion, understanding the underlying drivers of customer satisfaction and financial engagement remains a significant challenge.</p>
+<section id="motivation" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="motivation"><span class="header-section-number">1.1</span> Motivation</h3>
+<p>Most fintech analyses focus on surface-level reporting such as total transaction volume or average values. However, these metrics do not explain <em>why</em> customers behave differently across segments.</p>
+<p>Fintech users are highly heterogeneous. For example:</p>
 <ul>
-<li>project proposal</li>
-<li>methodology</li>
-<li>findings</li>
-<li>poster</li>
-<li>meeting minutes</li>
-<li>team contributions</li>
-<li>Shiny application</li>
+<li>Some users exhibit high transaction frequency but low financial value<br>
+</li>
+<li>Others contribute significantly to total transaction volume but engage less frequently<br>
+</li>
+<li>Certain groups may be highly digitally engaged but not financially active</li>
 </ul>
+<p>Traditional analysis methods are limited in capturing these behavioural differences.</p>
 </section>
-<section id="current-status" class="level2">
-<h2 class="anchored" data-anchor-id="current-status">Current Status</h2>
-<p>This website is currently being developed as part of the <strong>ISSS608 Visual Analytics</strong> group project. Additional content, analysis outputs, and application components will be added progressively.</p>
-</section>
-<section id="team-contribution-overview" class="level2">
-<h2 class="anchored" data-anchor-id="team-contribution-overview">Team Contribution Overview</h2>
-<p>Each group member contributes an individual analytical component that supports the overall project objective:</p>
+<section id="objective" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="objective"><span class="header-section-number">1.2</span> Objective</h3>
+<p>The objective of this project is to understand the behaviours behind customer transactions and how socio-demographic factors—such as age, income, and education—affect financial activity within the Colombian fintech ecosystem.</p>
+<p>Specifically, the project aims to:</p>
 <ul>
-<li><strong>Exploratory Analysis</strong> — socio-demographic correlation and transaction behaviour</li>
-<li><strong>Clustering Analysis</strong> — customer segmentation using behavioural and engagement variables</li>
-<li><strong>Predictive Modelling</strong> — modelling Customer Satisfaction and Transaction Behaviour</li>
+<li>Identify the key drivers of customer transaction behaviour<br>
+</li>
+<li>Understand how demographic groups influence financial activity<br>
+</li>
+<li>Segment customers based on behavioural and engagement characteristics<br>
+</li>
+<li>Develop predictive models to estimate customer behaviour<br>
+</li>
+<li>Design a visual analytics application to support interactive exploration</li>
 </ul>
 <hr>
-<p>Developed for <strong>ISSS608 Visual Analytics</strong>.</p>
-
-
 </section>
+</section>
+<section id="data-overview-cofinfad-dataset" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="data-overview-cofinfad-dataset"><span class="header-section-number">2</span> Data Overview: COFINFAD Dataset</h2>
+<p>The COFINFAD dataset captures the transition from traditional cash-based behaviour to a digital-first financial ecosystem.</p>
+<section id="data-structure" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="data-structure"><span class="header-section-number">2.1</span> Data Structure</h3>
+<p>The dataset consists of two main components:</p>
+<ul>
+<li><p><strong>Customer-Level Dataset (48,723 records)</strong><br>
+Contains demographic, behavioural, engagement, and satisfaction attributes</p></li>
+<li><p><strong>Transaction-Level Dataset (3.1 million records)</strong><br>
+Contains detailed transaction information such as:</p>
+<ul>
+<li>Transaction amount<br>
+</li>
+<li>Transaction date<br>
+</li>
+<li>Transaction type</li>
+</ul></li>
+</ul>
+<p>Both datasets are linked through a common identifier: <code>customer_id</code>.</p>
+<hr>
+</section>
+<section id="key-variable-categories" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="key-variable-categories"><span class="header-section-number">2.2</span> Key Variable Categories</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 35%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Variables</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Demographics</td>
+<td>Age, Income, Education, Household Size</td>
+<td>Customer segmentation</td>
+</tr>
+<tr class="even">
+<td>Engagement</td>
+<td>App logins, Feature usage, Active products</td>
+<td>Digital behaviour</td>
+</tr>
+<tr class="odd">
+<td>Financial</td>
+<td>Transaction count, Avg value, Total volume</td>
+<td>Financial activity</td>
+</tr>
+<tr class="even">
+<td>Sentiment</td>
+<td>Satisfaction score, NPS score</td>
+<td>Customer experience</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="analytical-framework-integrated-approach" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="analytical-framework-integrated-approach"><span class="header-section-number">3</span> Analytical Framework (Integrated Approach)</h2>
+<p>The project adopts a three-stage analytical framework combining exploratory analysis, customer segmentation, and predictive modelling.</p>
+<hr>
+<section id="exploratory-confirmatory-analysis-eda-cda" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="exploratory-confirmatory-analysis-eda-cda"><span class="header-section-number">3.1</span> Exploratory &amp; Confirmatory Analysis (EDA &amp; CDA)</h3>
+<p>The first stage focuses on identifying relationships between socio-demographic variables and financial behaviour.</p>
+<p>Key behavioural indicators include:</p>
+<ul>
+<li>Transaction count (<code>tx_count</code>)<br>
+</li>
+<li>Average transaction value (<code>avg_tx_value</code>)</li>
+</ul>
+<p>Due to the skewed nature of financial data, non-parametric statistical methods are used. Visual analytics techniques such as distribution plots, boxplots, and faceted comparisons are applied to explore how different demographic groups influence transaction behaviour.</p>
+<p>This stage provides the foundational understanding of behavioural patterns across the customer base.</p>
+<hr>
+</section>
+<section id="customer-segmentation-k-means-clustering" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="customer-segmentation-k-means-clustering"><span class="header-section-number">3.2</span> Customer Segmentation (K-Means Clustering)</h3>
+<p>The second stage applies <strong>K-Means clustering (k = 4)</strong> to group customers based on behavioural characteristics.</p>
+<p>Clustering is performed using variables from three dimensions:</p>
+<section id="transaction-behaviour" class="level4" data-number="3.2.1">
+<h4 data-number="3.2.1" class="anchored" data-anchor-id="transaction-behaviour"><span class="header-section-number">3.2.1</span> Transaction Behaviour</h4>
+<ul>
+<li>Transaction count<br>
+</li>
+<li>Average transaction value<br>
+</li>
+<li>Transaction frequency</li>
+</ul>
+</section>
+<section id="digital-engagement" class="level4" data-number="3.2.2">
+<h4 data-number="3.2.2" class="anchored" data-anchor-id="digital-engagement"><span class="header-section-number">3.2.2</span> Digital Engagement</h4>
+<ul>
+<li>App login frequency<br>
+</li>
+<li>Feature usage diversity<br>
+</li>
+<li>Active products</li>
+</ul>
+</section>
+<section id="customer-value-risk" class="level4" data-number="3.2.3">
+<h4 data-number="3.2.3" class="anchored" data-anchor-id="customer-value-risk"><span class="header-section-number">3.2.3</span> Customer Value &amp; Risk</h4>
+<ul>
+<li>Satisfaction score<br>
+</li>
+<li>Churn probability<br>
+</li>
+<li>Customer lifetime value</li>
+</ul>
+<p>This approach identifies distinct customer segments such as:</p>
+<ul>
+<li>High-value customers<br>
+</li>
+<li>Digitally engaged users<br>
+</li>
+<li>Moderate activity users<br>
+</li>
+<li>Low engagement segments</li>
+</ul>
+<p>These clusters provide a structured way to interpret customer behaviour at scale.</p>
+<hr>
+</section>
+</section>
+<section id="predictive-modelling" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="predictive-modelling"><span class="header-section-number">3.3</span> Predictive Modelling</h3>
+<p>The final stage extends the analysis by developing predictive models to estimate key customer outcomes.</p>
+<hr>
+<section id="customer-satisfaction-prediction-supporting-analysis" class="level4" data-number="3.3.1">
+<h4 data-number="3.3.1" class="anchored" data-anchor-id="customer-satisfaction-prediction-supporting-analysis"><span class="header-section-number">3.3.1</span> Customer Satisfaction Prediction (Supporting Analysis)</h4>
+<ul>
+<li>Target variable: <strong>satisfaction_score</strong><br>
+</li>
+<li>Models used:
+<ul>
+<li>Linear Regression<br>
+</li>
+<li>Decision Tree<br>
+</li>
+<li>Random Forest</li>
+</ul></li>
+</ul>
+<p>This component evaluates how demographic, behavioural, and engagement variables influence customer experience.</p>
+<p>However, the results show relatively low explanatory power, indicating that customer satisfaction is influenced by factors not fully captured in the dataset.</p>
+<hr>
+</section>
+<section id="transaction-behaviour-prediction-primary-focus" class="level4" data-number="3.3.2">
+<h4 data-number="3.3.2" class="anchored" data-anchor-id="transaction-behaviour-prediction-primary-focus"><span class="header-section-number">3.3.2</span> 2. Transaction Behaviour Prediction (Primary Focus)</h4>
+<ul>
+<li>Target variable: <strong>avg_daily_transactions (log-transformed)</strong><br>
+</li>
+<li>Models used:
+<ul>
+<li>Linear Regression<br>
+</li>
+<li>Decision Tree<br>
+</li>
+<li>Random Forest</li>
+</ul></li>
+</ul>
+<p>The target variable exhibits strong right-skewness. To address this, a logarithmic transformation (<code>log1p</code>) is applied.</p>
+<p>This modelling component focuses on financial activity, which is more directly aligned with the project objective.</p>
+<p>Among the models, Random Forest demonstrates the best predictive performance, indicating that non-linear relationships play an important role in explaining transaction behaviour.</p>
+<hr>
+</section>
+</section>
+<section id="integrated-insight" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="integrated-insight"><span class="header-section-number">3.4</span> Integrated Insight</h3>
+<p>By combining:</p>
+<ul>
+<li>Statistical analysis (EDA/CDA)<br>
+</li>
+<li>Behavioural segmentation (Clustering)<br>
+</li>
+<li>Predictive modelling</li>
+</ul>
+<p>the project provides a comprehensive understanding of:</p>
+<ul>
+<li>Why customers behave differently<br>
+</li>
+<li>How customer behaviour can be predicted<br>
+</li>
+<li>Which factors drive financial activity in fintech platforms</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="proposed-visual-analytics-application" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="proposed-visual-analytics-application"><span class="header-section-number">4</span> 4. Proposed Visual Analytics Application</h2>
+<p>The proposed Shiny application will consist of three main modules:</p>
+<hr>
+<section id="exploratory-analysis-module" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="exploratory-analysis-module"><span class="header-section-number">4.1</span> Exploratory Analysis Module</h3>
+<ul>
+<li>Interactive filtering by demographic variables<br>
+</li>
+<li>Distribution and comparison visualisations<br>
+</li>
+<li>Correlation analysis between key variables</li>
+</ul>
+<hr>
+</section>
+<section id="customer-segmentation-module" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="customer-segmentation-module"><span class="header-section-number">4.2</span> Customer Segmentation Module</h3>
+<ul>
+<li>Visualization of customer clusters<br>
+</li>
+<li>Cluster comparison dashboards<br>
+</li>
+<li>Profiling of different customer segments</li>
+</ul>
+<hr>
+</section>
+<section id="predictive-analytics-module" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="predictive-analytics-module"><span class="header-section-number">4.3</span> Predictive Analytics Module</h3>
+<ul>
+<li>Model performance comparison<br>
+</li>
+<li>Feature importance visualization<br>
+</li>
+<li>Predicted vs actual analysis<br>
+</li>
+<li>Insights into key drivers of behaviour</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="project-timeline-and-work-allocation" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="project-timeline-and-work-allocation"><span class="header-section-number">5</span> Project Timeline and Work Allocation</h2>
+<p><img src="ganttcchart.jpg" class="img-fluid"></p>
+<section id="team-responsibilities" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="team-responsibilities"><span class="header-section-number">5.1</span> Team Responsibilities</h3>
+<ul>
+<li><strong>EDA &amp; CDA Module</strong> – Ng Meng Ye<br>
+</li>
+<li><strong>Clustering Module</strong> – Chandru Kolanchiyappan<br>
+</li>
+<li><strong>Predictive Modelling Module</strong> – Gautamgovan Elangovan</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="expected-value" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="expected-value"><span class="header-section-number">6</span> 6. Expected Value</h2>
+<p>This project provides:</p>
+<ul>
+<li>A deeper understanding of customer financial behaviour<br>
+</li>
+<li>Identification of key drivers of transaction activity<br>
+</li>
+<li>Data-driven insights for fintech decision-making<br>
+</li>
+<li>A scalable visual analytics framework for future applications</li>
+</ul>
+<p>The integration of statistical analysis, clustering, and predictive modelling ensures that both behavioural patterns and predictive insights are captured effectively.</p>
+<hr>
+
+
 </section>
 
 </main> <!-- /main -->
