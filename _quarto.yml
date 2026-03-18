@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "ISSS608 Group 10 Project"
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - href: proposal.qmd
+        text: Proposal
+      - href: methodology.qmd
+        text: Methodology
+      - href: findings.qmd
+        text: Findings
+      - href: poster.qmd
+        text: Poster
+      - href: meeting-minutes.qmd
+        text: Meeting Minutes
+    right:
+      - href: team.qmd
+        text: The Team
+      - href: shiny.qmd
+        text: Shiny App
+      - icon: github
+        href: https://github.com/govanzz/isss608-group10-project
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: right
+
+editor: visual
