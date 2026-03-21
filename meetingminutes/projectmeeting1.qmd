@@ -1,0 +1,77 @@
+# ISSS608 Group 10 Meeting Minutes
+
+**Project Meeting 1:** Project Proposal, Project Methodology, Project Timeline
+
+**Date:** 28 Feb 2026
+
+**Time:** 3:45pm – 4.15pm
+
+**In Attendance:** Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan
+
+## **Agenda Items**
+
+1.  Project Topic
+
+2.  Project Methodology
+
+3.  Project Timeline
+
+4.  Any Other Matters/ Follow-up Action
+
+## **Agenda Item 1: Decision on Project Topic**
+
+Prior to the first meeting, the team had an informal discussion on 29 January 2024 and agreed to explore topics that provide ample of variables (continuous and categorical) that allow exploration of different visualisation techniques/ methods.
+
+Imran suggested working on student performance by looking at School questionnaire and Student questionnaire data files. He retrieved the datasets from Programme for International Student Assessment (PISA). The dataset is suitable for Exploratory Data Analysis (EDA) and Confirmatory Data Analysis (CDA) such as clustering analysis. Imran also added that he found a comprehensive dataset from the US CDC, that examined cardiovascular disease attributes and conditions in the United States that could possibly be suitable for EDA, CDA and predictive analysis.
+
+Zachary suggested looking at tourism dataset from Singapore Department of Statistics (DOS). He added on and shared with the team a global terrorism dataset and its codebook from University of Maryland contains a single dataset with 135 variables to work with.
+
+Suan Ern shared that she tried work on ESG risk dataset that she found from The Wharton School of the University of Pennsylvania that examine ESG risk score. She added on to share that she explored the 11 Consumer Price Index (CPI) datasets from DOS. She presented to the team on the data preparation and EDAs that showed the possible correlation between the different household income group and the different CPI basket of goods.
+
+-   Consumer Price Index (CPI), 2019 as Base Year (Annual, Quarterly, Monthly)
+
+-   Percent Change In Consumer Price Index (CPI) Over Corresponding Period Of Previous Year, 2019 as Base Year, Annual
+
+-   Consumer Price Index (CPI) By Household Income Groups, 2019 as Base Year, Annual (Lowest 20%, Middle 60% and Highest 20%)
+
+-   Percent Change In Consumer Price Index (CPI) By Household Income Group Over Corresponding Period Of Previous Year, 2019 as Base Year, Annual (, Lowest 20%, Middle 60% and Highest 20%)
+
+*Afternote: The team narrowed down to two possible open government data topics: Global Terrorism and Singapore CPI and sought Professor Kam’s guidance in class on 3 February 2024. Professor Kam shared that both project topics are feasible topics for visualisation.*
+
+The team unanimously decided on the project topic of “Global Terrorism” after considering all the different proposed ideas, as the “Global Terrorism” dataset has a comprehensive list of variables that can be worked on to explore the different visualisation techniques and methods learnt from the course. In addition, it also fulfilled the requirement of using open-source government data to build a web-enabled interactive visual analytics application.
+
+## **Agenda Item 2: Discussion on the Project Methodology**
+
+### **Discussion on Methodology**
+
+The group decided on the following broad steps in terms of methodology:
+
+**i.      Data Preparation:** Clean the dataset by handling missing values, removing irrelevant variables, filtering variables and encoding categorical variables if necessary.
+
+**ii.    Exploratory Data Analysis via Data Visualisation Methods:** Analyse the dataset to understand the distribution of variables, identify patterns, and explore correlation between variables. Such as using:
+
+·        Time-series bar/ line charts and bubble plots
+
+·        Geospatial heatmap/ hotspot maps
+
+**iii.   Confirmatory Data Analysis via Statistical Methods:** Analyse the dataset using statistical testing tools to test hypotheses, evaluate the findings and arguments (e.g. strength of relationships between variables) and make statistical observations under uncertainty. Such as using:
+
+·        Correlation test: Correlation web plot, or Significant Test of Correlation: ggscatterstats() method
+
+·        Model Diagnostic: checking for multicollinearity
+
+·        Model Diagnostic: checking normality assumption
+
+·        Oneway ANOVA Test: ggbetweenstats() method
+
+## **Agenda Item 3: Consensus on the Project Timeline**
+
+The team agreed on the detailed task and project timeline set out in the Gantt Chart enclosed.
+
+## **Agenda Item 4: Any Other Matters/ Follow-up Action**
+
+With no other matters, the meeting ended at 12:15pm.
+
+**Follow-up Actions:**
+
+-   The team agreed to perform EDA on the Global Terrorism Dataset for the next meeting to discuss in more details on the dataset.
