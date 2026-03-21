@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>projectmeeting1 – ISSS608 Group 10 Project</title>
+<title>projectmeeting3 – ISSS608 Group 10 Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -168,14 +168,9 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#isss608-group-10-meeting-minutes" id="toc-isss608-group-10-meeting-minutes" class="nav-link active" data-scroll-target="#isss608-group-10-meeting-minutes">ISSS608 Group 10 Meeting Minutes</a>
   <ul class="collapse">
-  <li><a href="#agenda-items" id="toc-agenda-items" class="nav-link" data-scroll-target="#agenda-items"><strong>Agenda Items</strong></a></li>
-  <li><a href="#agenda-item-1-decision-on-project-topic" id="toc-agenda-item-1-decision-on-project-topic" class="nav-link" data-scroll-target="#agenda-item-1-decision-on-project-topic"><strong>Agenda Item 1: Decision on Project Topic</strong></a></li>
-  <li><a href="#agenda-item-2-discussion-on-the-project-methodology" id="toc-agenda-item-2-discussion-on-the-project-methodology" class="nav-link" data-scroll-target="#agenda-item-2-discussion-on-the-project-methodology"><strong>Agenda Item 2: Discussion on the Project Methodology</strong></a>
-  <ul class="collapse">
-  <li><a href="#discussion-on-methodology" id="toc-discussion-on-methodology" class="nav-link" data-scroll-target="#discussion-on-methodology"><strong>Discussion on Methodology</strong></a></li>
-  </ul></li>
-  <li><a href="#agenda-item-3-consensus-on-the-project-timeline" id="toc-agenda-item-3-consensus-on-the-project-timeline" class="nav-link" data-scroll-target="#agenda-item-3-consensus-on-the-project-timeline"><strong>Agenda Item 3: Consensus on the Project Timeline</strong></a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#agenda-items" id="toc-agenda-items" class="nav-link" data-scroll-target="#agenda-items">Agenda Items</a></li>
+  <li><a href="#project-netlify-deployment-integration" id="toc-project-netlify-deployment-integration" class="nav-link" data-scroll-target="#project-netlify-deployment-integration">1. Project Netlify: Deployment &amp; Integration</a></li>
+  <li><a href="#project-poster-communicating-the-results" id="toc-project-poster-communicating-the-results" class="nav-link" data-scroll-target="#project-poster-communicating-the-results">2. Project Poster: Communicating the Results</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -188,58 +183,39 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="isss608-group-10-meeting-minutes" class="level1">
 <h1>ISSS608 Group 10 Meeting Minutes</h1>
-<p><strong>Project Meeting 1:</strong> Project Proposal, Project Methodology, Project Timeline</p>
+<p><strong>Project Meeting 3:</strong> Project Netlify, Project Poster</p>
 <p><strong>Date:</strong> 28 Feb 2026</p>
 <p><strong>Time:</strong> 3:45pm – 4.15pm</p>
 <p><strong>In Attendance:</strong> Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan</p>
 <section id="agenda-items" class="level2">
-<h2 class="anchored" data-anchor-id="agenda-items"><strong>Agenda Items</strong></h2>
+<h2 class="anchored" data-anchor-id="agenda-items">Agenda Items</h2>
+<ol type="1">
+<li><p>Netlify Deployment &amp; CI/CD Troubleshooting</p></li>
+<li><p>Project Poster: Design and Data Storytelling</p></li>
+<li><p>Final Website Audit (Internal Review)</p></li>
+</ol>
+</section>
+<section id="project-netlify-deployment-integration" class="level2">
+<h2 class="anchored" data-anchor-id="project-netlify-deployment-integration">1. Project Netlify: Deployment &amp; Integration</h2>
+<p>The team discussed the current status of the <a href="https://visual-analytics-group-10-project.netlify.app/">Netlify deployment</a>.</p>
 <ul>
-<li>Selection of Project Topic &amp; Dataset</li>
-</ul>
-<!-- -->
-<ul>
-<li><p>Definition of Project Methodology (The Three Pillars)</p></li>
-<li><p>Review of Project Timeline &amp; Gantt Chart</p></li>
-<li><p>Action Items &amp; Follow-up</p></li>
+<li><p><strong>CI/CD Sync:</strong> Resolved issues regarding the <code>_site</code> and <code>_freeze</code> folders causing merge conflicts. The team successfully implemented a <code>.gitignore</code> to ensure only source <code>.qmd</code> and <code>.R</code> files are tracked.</p></li>
+<li><p><strong>Link Resolution:</strong> Addressed the “Unable to resolve link target” warnings for <code>proposal.qmd</code> and <code>findings.qmd</code>. All navigation links in the <code>cosmo</code> theme sidebar are now functional.</p></li>
+<li><p><strong>Shiny Integration:</strong> Confirmed the Shiny application will be hosted on a separate ShinyApps.io server and embedded/linked within the main Netlify site.</p></li>
 </ul>
 </section>
-<section id="agenda-item-1-decision-on-project-topic" class="level2">
-<h2 class="anchored" data-anchor-id="agenda-item-1-decision-on-project-topic"><strong>Agenda Item 1: Decision on Project Topic</strong></h2>
-<p>The team evaluated three available datasets and reached a consensus to proceed with the <strong>Colombian Fintech Financial Analytics (COFINFAD)</strong> dataset.</p>
+<section id="project-poster-communicating-the-results" class="level2">
+<h2 class="anchored" data-anchor-id="project-poster-communicating-the-results">2. Project Poster: Communicating the Results</h2>
+<p>The team brainstormed the visual layout for the project poster. The goal is to distill the complex COFINFAD analysis into a single, high-impact visual.</p>
 <ul>
-<li><p><strong>Rational:</strong> The dataset is comprehensive, structured, and documentation is readily available.</p></li>
-<li><p><strong>Accessibility:</strong> The download process is straightforward, allowing the team to begin data wrangling immediately.</p></li>
-</ul>
-</section>
-<section id="agenda-item-2-discussion-on-the-project-methodology" class="level2">
-<h2 class="anchored" data-anchor-id="agenda-item-2-discussion-on-the-project-methodology"><strong>Agenda Item 2: Discussion on the Project Methodology</strong></h2>
-<section id="discussion-on-methodology" class="level3">
-<h3 class="anchored" data-anchor-id="discussion-on-methodology"><strong>Discussion on Methodology</strong></h3>
-<p>The project will be divided into three distinct analytical components. Each member will lead one module to ensure comprehensive coverage of the visual analytics spectrum:</p>
+<li><p><strong>Core Narrative:</strong> The poster will focus on the “User Journey”—moving from raw demographic data (EDA) to behavioral segments (Clustering) and finally to satisfaction drivers (Prediction).</p></li>
+<li><p><strong>Key Visuals to Include:</strong></p>
 <ul>
-<li><p><strong>Module 1: Exploratory Data Analysis (EDA)</strong> * <strong>Lead:</strong> Ng Meng Ye</p>
-<ul>
-<li><strong>Focus:</strong> Investigating the correlation between socio-demographic markers (age, income) and transaction behaviors (frequency, volume).</li>
-</ul></li>
-<li><p><strong>Module 2: Customer Segmentation (Clustering)</strong> * <strong>Lead:</strong> Chandru Kolanchiyappan</p>
-<ul>
-<li><strong>Focus:</strong> Applying clustering techniques (e.g., K-Means) to identify distinct user personas based on financial engagement profiles.</li>
-</ul></li>
-<li><p><strong>Module 3: Predictive Modelling</strong> * <strong>Lead:</strong> Gautamgovan Elangovan</p>
-<ul>
-<li><strong>Focus:</strong> Developing models to predict <strong>Customer Satisfaction</strong> and <strong>Transaction Activity</strong> using behavioral and digital engagement variables.</li>
+<li><p>The <strong>Half-Eye plots</strong> from the EDA phase to show data density.</p></li>
+<li><p>A <strong>Cluster Dendrogram</strong> or PCA plot to visualize customer segmentation.</p></li>
+<li><p>A <strong>Variable Importance Plot</strong> from the Random Forest model to show what truly drives Colombian fintech satisfaction.</p></li>
 </ul></li>
 </ul>
-</section>
-</section>
-<section id="agenda-item-3-consensus-on-the-project-timeline" class="level2">
-<h2 class="anchored" data-anchor-id="agenda-item-3-consensus-on-the-project-timeline"><strong>Agenda Item 3: Consensus on the Project Timeline</strong></h2>
-<p>The team agreed on the detailed task and project timeline set out in the Gantt Chart enclosed.</p>
-<p><img src="images/clipboard-754356886.jpeg" class="img-fluid"></p>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
 
 
 </section>

@@ -14,7 +14,7 @@
 
 ---
 
-**Project Meeting 2:** Project Netlify, R Shiny dashboard modules, Data preparation
+**Project Meeting 2:** R Shiny dashboard modules
 
 **Date:** 04 Mar 2026
 
@@ -22,14 +22,18 @@
 
 **In Attendance:** Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan
 
+[Click here to view meeting minutes - 2](https://visual-analytics-group-10-project.netlify.app/meetingminutes/projectmeeting2)
+
 ---
 
-**Project Meeting 3:** Project Netlify, R Shiny dashboard modules, User guide
+**Project Meeting 3:** Project Netlify, Project Poster
 
 **Date:** 21 Mar 2026
 
-**Time:** 3:45pm – 4.15pm
+**Time:** 8pm – 8.30pm
 
 **In Attendance:** Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan
+
+[Click here to view meeting minutes - 3](https://visual-analytics-group-10-project.netlify.app/meetingminutes/projectmeeting3)
 
 ---

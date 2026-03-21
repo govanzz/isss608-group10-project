@@ -1,0 +1,41 @@
+# ISSS608 Group 10 Meeting Minutes
+
+**Project Meeting 3:** Project Netlify, Project Poster
+
+**Date:** 28 Feb 2026
+
+**Time:** 3:45pm – 4.15pm
+
+**In Attendance:** Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan
+
+## Agenda Items
+
+1.  Netlify Deployment & CI/CD Troubleshooting
+
+2.  Project Poster: Design and Data Storytelling
+
+3.  Final Website Audit (Internal Review)
+
+## 1. Project Netlify: Deployment & Integration
+
+The team discussed the current status of the [Netlify deployment](https://visual-analytics-group-10-project.netlify.app/).
+
+-   **CI/CD Sync:** Resolved issues regarding the `_site` and `_freeze` folders causing merge conflicts. The team successfully implemented a `.gitignore` to ensure only source `.qmd` and `.R` files are tracked.
+
+-   **Link Resolution:** Addressed the "Unable to resolve link target" warnings for `proposal.qmd` and `findings.qmd`. All navigation links in the `cosmo` theme sidebar are now functional.
+
+-   **Shiny Integration:** Confirmed the Shiny application will be hosted on a separate ShinyApps.io server and embedded/linked within the main Netlify site.
+
+## 2. Project Poster: Communicating the Results
+
+The team brainstormed the visual layout for the project poster. The goal is to distill the complex COFINFAD analysis into a single, high-impact visual.
+
+-   **Core Narrative:** The poster will focus on the "User Journey"—moving from raw demographic data (EDA) to behavioral segments (Clustering) and finally to satisfaction drivers (Prediction).
+
+-   **Key Visuals to Include:**
+
+    -   The **Half-Eye plots** from the EDA phase to show data density.
+
+    -   A **Cluster Dendrogram** or PCA plot to visualize customer segmentation.
+
+    -   A **Variable Importance Plot** from the Random Forest model to show what truly drives Colombian fintech satisfaction.

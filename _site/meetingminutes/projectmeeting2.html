@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>projectmeeting1 – ISSS608 Group 10 Project</title>
+<title>projectmeeting2 – ISSS608 Group 10 Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -168,14 +197,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#isss608-group-10-meeting-minutes" id="toc-isss608-group-10-meeting-minutes" class="nav-link active" data-scroll-target="#isss608-group-10-meeting-minutes">ISSS608 Group 10 Meeting Minutes</a>
   <ul class="collapse">
-  <li><a href="#agenda-items" id="toc-agenda-items" class="nav-link" data-scroll-target="#agenda-items"><strong>Agenda Items</strong></a></li>
-  <li><a href="#agenda-item-1-decision-on-project-topic" id="toc-agenda-item-1-decision-on-project-topic" class="nav-link" data-scroll-target="#agenda-item-1-decision-on-project-topic"><strong>Agenda Item 1: Decision on Project Topic</strong></a></li>
-  <li><a href="#agenda-item-2-discussion-on-the-project-methodology" id="toc-agenda-item-2-discussion-on-the-project-methodology" class="nav-link" data-scroll-target="#agenda-item-2-discussion-on-the-project-methodology"><strong>Agenda Item 2: Discussion on the Project Methodology</strong></a>
-  <ul class="collapse">
-  <li><a href="#discussion-on-methodology" id="toc-discussion-on-methodology" class="nav-link" data-scroll-target="#discussion-on-methodology"><strong>Discussion on Methodology</strong></a></li>
-  </ul></li>
-  <li><a href="#agenda-item-3-consensus-on-the-project-timeline" id="toc-agenda-item-3-consensus-on-the-project-timeline" class="nav-link" data-scroll-target="#agenda-item-3-consensus-on-the-project-timeline"><strong>Agenda Item 3: Consensus on the Project Timeline</strong></a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#agenda-items" id="toc-agenda-items" class="nav-link" data-scroll-target="#agenda-items">Agenda Items</a></li>
+  <li><a href="#r-shiny-dashboard-design-storyboard-review" id="toc-r-shiny-dashboard-design-storyboard-review" class="nav-link" data-scroll-target="#r-shiny-dashboard-design-storyboard-review">1. R Shiny Dashboard Design (Storyboard Review)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -188,58 +211,47 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="isss608-group-10-meeting-minutes" class="level1">
 <h1>ISSS608 Group 10 Meeting Minutes</h1>
-<p><strong>Project Meeting 1:</strong> Project Proposal, Project Methodology, Project Timeline</p>
-<p><strong>Date:</strong> 28 Feb 2026</p>
+<p><strong>Project Meeting 2:</strong> R Shiny dashboard modules</p>
+<p><strong>Date:</strong> 04 Mar 2026</p>
 <p><strong>Time:</strong> 3:45pm – 4.15pm</p>
 <p><strong>In Attendance:</strong> Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan</p>
+<hr>
 <section id="agenda-items" class="level2">
-<h2 class="anchored" data-anchor-id="agenda-items"><strong>Agenda Items</strong></h2>
+<h2 class="anchored" data-anchor-id="agenda-items">Agenda Items</h2>
+<ol type="1">
+<li><p>Discussion on R Shiny dashboard modules</p>
 <ul>
-<li>Selection of Project Topic &amp; Dataset</li>
-</ul>
-<!-- -->
-<ul>
-<li><p>Definition of Project Methodology (The Three Pillars)</p></li>
-<li><p>Review of Project Timeline &amp; Gantt Chart</p></li>
-<li><p>Action Items &amp; Follow-up</p></li>
-</ul>
-</section>
-<section id="agenda-item-1-decision-on-project-topic" class="level2">
-<h2 class="anchored" data-anchor-id="agenda-item-1-decision-on-project-topic"><strong>Agenda Item 1: Decision on Project Topic</strong></h2>
-<p>The team evaluated three available datasets and reached a consensus to proceed with the <strong>Colombian Fintech Financial Analytics (COFINFAD)</strong> dataset.</p>
-<ul>
-<li><p><strong>Rational:</strong> The dataset is comprehensive, structured, and documentation is readily available.</p></li>
-<li><p><strong>Accessibility:</strong> The download process is straightforward, allowing the team to begin data wrangling immediately.</p></li>
-</ul>
-</section>
-<section id="agenda-item-2-discussion-on-the-project-methodology" class="level2">
-<h2 class="anchored" data-anchor-id="agenda-item-2-discussion-on-the-project-methodology"><strong>Agenda Item 2: Discussion on the Project Methodology</strong></h2>
-<section id="discussion-on-methodology" class="level3">
-<h3 class="anchored" data-anchor-id="discussion-on-methodology"><strong>Discussion on Methodology</strong></h3>
-<p>The project will be divided into three distinct analytical components. Each member will lead one module to ensure comprehensive coverage of the visual analytics spectrum:</p>
-<ul>
-<li><p><strong>Module 1: Exploratory Data Analysis (EDA)</strong> * <strong>Lead:</strong> Ng Meng Ye</p>
-<ul>
-<li><strong>Focus:</strong> Investigating the correlation between socio-demographic markers (age, income) and transaction behaviors (frequency, volume).</li>
+<li><p>Exploratory Data Analysis</p></li>
+<li><p>Customer Segmentation (Clustering)</p></li>
+<li><p>Predictive Modelling</p></li>
 </ul></li>
-<li><p><strong>Module 2: Customer Segmentation (Clustering)</strong> * <strong>Lead:</strong> Chandru Kolanchiyappan</p>
+</ol>
+<hr>
+</section>
+<section id="r-shiny-dashboard-design-storyboard-review" class="level2">
+<h2 class="anchored" data-anchor-id="r-shiny-dashboard-design-storyboard-review">1. R Shiny Dashboard Design (Storyboard Review)</h2>
+<p>The team reviewed the hand-drawn wireframes for the application. The dashboard will move beyond static plots to allow user-driven statistical testing.</p>
+<p><strong>Tab 1: Exploratory Data Analysis (The Dashboard)</strong></p>
 <ul>
-<li><strong>Focus:</strong> Applying clustering techniques (e.g., K-Means) to identify distinct user personas based on financial engagement profiles.</li>
-</ul></li>
-<li><p><strong>Module 3: Predictive Modelling</strong> * <strong>Lead:</strong> Gautamgovan Elangovan</p>
-<ul>
-<li><strong>Focus:</strong> Developing models to predict <strong>Customer Satisfaction</strong> and <strong>Transaction Activity</strong> using behavioral and digital engagement variables.</li>
-</ul></li>
+<li><p><strong>Visuals:</strong> Implementation of <strong>Half-Eye graphs</strong> (combining density and boxplots) to show distributions of variables like Marital Status and Education Level.</p></li>
+<li><p><strong>Interactivity:</strong> Drop-down menus to filter by continuous variables (Transaction Count, Transaction Value).</p></li>
 </ul>
-</section>
-</section>
-<section id="agenda-item-3-consensus-on-the-project-timeline" class="level2">
-<h2 class="anchored" data-anchor-id="agenda-item-3-consensus-on-the-project-timeline"><strong>Agenda Item 3: Consensus on the Project Timeline</strong></h2>
-<p>The team agreed on the detailed task and project timeline set out in the Gantt Chart enclosed.</p>
-<p><img src="images/clipboard-754356886.jpeg" class="img-fluid"></p>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<p><strong>Tab 2: Confirmatory Analysis (ANOVA/Kruskal-Wallis)</strong></p>
+<ul>
+<li><p><strong>Feature:</strong> A dedicated page for group comparisons.</p></li>
+<li><p><strong>Interactivity:</strong> Users can select <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> variables.</p></li>
+<li><p><strong>Statistical Choice:</strong> A toggle to switch between <strong>Parametric (ANOVA)</strong> and <strong>Non-Parametric (Kruskal-Wallis)</strong> tests depending on the data distribution.</p></li>
+</ul>
+<p><strong>Tab 3: Relationship Analysis (Correlation)</strong></p>
+<ul>
+<li><p><strong>Feature:</strong> Interactive Scatter Plots and Correlation Matrices.</p></li>
+<li><p><strong>Interactivity:</strong> Toggle between Pearson (parametric) and Spearman/Kendall (non-parametric) correlation methods based on user selection.</p></li>
+</ul>
+<p><strong>Tab 4 &amp; 5: Advanced Analytics</strong></p>
+<ul>
+<li><p><strong>Clustering:</strong> User-defined cluster counts (<span class="math inline">\(k\)</span> value) and variable selection for segmentation.</p></li>
+<li><p><strong>Predictive Model:</strong> UI for inputting hypothetical user data to predict Satisfaction or Transaction behavior.</p></li>
+</ul>
 
 
 </section>

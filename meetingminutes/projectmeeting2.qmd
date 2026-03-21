@@ -1,0 +1,53 @@
+# ISSS608 Group 10 Meeting Minutes
+
+**Project Meeting 2:** R Shiny dashboard modules
+
+**Date:** 04 Mar 2026
+
+**Time:** 3:45pm – 4.15pm
+
+**In Attendance:** Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan
+
+------------------------------------------------------------------------
+
+## Agenda Items
+
+1.  Discussion on R Shiny dashboard modules
+
+    -   Exploratory Data Analysis
+
+    -   Customer Segmentation (Clustering)
+
+    -   Predictive Modelling
+
+------------------------------------------------------------------------
+
+## 1. R Shiny Dashboard Design (Storyboard Review)
+
+The team reviewed the hand-drawn wireframes for the application. The dashboard will move beyond static plots to allow user-driven statistical testing.
+
+**Tab 1: Exploratory Data Analysis (The Dashboard)**
+
+-   **Visuals:** Implementation of **Half-Eye graphs** (combining density and boxplots) to show distributions of variables like Marital Status and Education Level.
+
+-   **Interactivity:** Drop-down menus to filter by continuous variables (Transaction Count, Transaction Value).
+
+**Tab 2: Confirmatory Analysis (ANOVA/Kruskal-Wallis)**
+
+-   **Feature:** A dedicated page for group comparisons.
+
+-   **Interactivity:** Users can select $X$ and $Y$ variables.
+
+-   **Statistical Choice:** A toggle to switch between **Parametric (ANOVA)** and **Non-Parametric (Kruskal-Wallis)** tests depending on the data distribution.
+
+**Tab 3: Relationship Analysis (Correlation)**
+
+-   **Feature:** Interactive Scatter Plots and Correlation Matrices.
+
+-   **Interactivity:** Toggle between Pearson (parametric) and Spearman/Kendall (non-parametric) correlation methods based on user selection.
+
+**Tab 4 & 5: Advanced Analytics**
+
+-   **Clustering:** User-defined cluster counts ($k$ value) and variable selection for segmentation.
+
+-   **Predictive Model:** UI for inputting hypothetical user data to predict Satisfaction or Transaction behavior.
