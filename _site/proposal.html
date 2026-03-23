@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,14 +33,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b3aed8deb8408878d0e4e165d993d59e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -80,6 +110,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">ISSS608 Group 10 Project</span>
     </a>
@@ -130,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Poster</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./meeting-minutes.qmd"> 
+    <a class="nav-link" href="./meeting-minutes.html"> 
 <span class="menu-text">Meeting Minutes</span></a>
   </li>  
 </ul>
@@ -183,15 +215,16 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#proposed-visual-analytics-application" id="toc-proposed-visual-analytics-application" class="nav-link" data-scroll-target="#proposed-visual-analytics-application"><span class="header-section-number">4</span> 4. Proposed Visual Analytics Application</a>
   <ul class="collapse">
-  <li><a href="#exploratory-analysis-module" id="toc-exploratory-analysis-module" class="nav-link" data-scroll-target="#exploratory-analysis-module"><span class="header-section-number">4.1</span> Exploratory Analysis Module</a></li>
-  <li><a href="#customer-segmentation-module" id="toc-customer-segmentation-module" class="nav-link" data-scroll-target="#customer-segmentation-module"><span class="header-section-number">4.2</span> Customer Segmentation Module</a></li>
-  <li><a href="#predictive-analytics-module" id="toc-predictive-analytics-module" class="nav-link" data-scroll-target="#predictive-analytics-module"><span class="header-section-number">4.3</span> Predictive Analytics Module</a></li>
+  <li><a href="#core-r-packages" id="toc-core-r-packages" class="nav-link" data-scroll-target="#core-r-packages"><span class="header-section-number">4.1</span> 4.1 Core R Packages</a></li>
   </ul></li>
-  <li><a href="#project-timeline-and-work-allocation" id="toc-project-timeline-and-work-allocation" class="nav-link" data-scroll-target="#project-timeline-and-work-allocation"><span class="header-section-number">5</span> Project Timeline and Work Allocation</a>
+  <li><a href="#module-1-exploratory-confirmatory-analysis-eda-cda" id="toc-module-1-exploratory-confirmatory-analysis-eda-cda" class="nav-link" data-scroll-target="#module-1-exploratory-confirmatory-analysis-eda-cda"><span class="header-section-number">5</span> 4.2 Module 1: Exploratory &amp; Confirmatory Analysis (EDA &amp; CDA)</a></li>
+  <li><a href="#module-2-customer-segmentation-clustering" id="toc-module-2-customer-segmentation-clustering" class="nav-link" data-scroll-target="#module-2-customer-segmentation-clustering"><span class="header-section-number">6</span> 4.3 Module 2: Customer Segmentation (Clustering)</a></li>
+  <li><a href="#module-3-predictive-modelling" id="toc-module-3-predictive-modelling" class="nav-link" data-scroll-target="#module-3-predictive-modelling"><span class="header-section-number">7</span> 4.4 Module 3: Predictive Modelling</a></li>
+  <li><a href="#project-timeline-and-work-allocation" id="toc-project-timeline-and-work-allocation" class="nav-link" data-scroll-target="#project-timeline-and-work-allocation"><span class="header-section-number">8</span> Project Timeline and Work Allocation</a>
   <ul class="collapse">
-  <li><a href="#team-responsibilities" id="toc-team-responsibilities" class="nav-link" data-scroll-target="#team-responsibilities"><span class="header-section-number">5.1</span> Team Responsibilities</a></li>
+  <li><a href="#team-responsibilities" id="toc-team-responsibilities" class="nav-link" data-scroll-target="#team-responsibilities"><span class="header-section-number">8.1</span> Team Responsibilities</a></li>
   </ul></li>
-  <li><a href="#expected-value" id="toc-expected-value" class="nav-link" data-scroll-target="#expected-value"><span class="header-section-number">6</span> Expected Value</a></li>
+  <li><a href="#expected-value" id="toc-expected-value" class="nav-link" data-scroll-target="#expected-value"><span class="header-section-number">9</span> Expected Value</a></li>
   </ul>
 </nav>
     </div>
@@ -449,49 +482,95 @@ Contains detailed transaction information such as:</p>
 </section>
 <section id="proposed-visual-analytics-application" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="proposed-visual-analytics-application"><span class="header-section-number">4</span> 4. Proposed Visual Analytics Application</h2>
-<p>The proposed Shiny application will consist of three main modules:</p>
-<hr>
-<section id="exploratory-analysis-module" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="exploratory-analysis-module"><span class="header-section-number">4.1</span> Exploratory Analysis Module</h3>
+<section id="core-r-packages" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="core-r-packages"><span class="header-section-number">4.1</span> 4.1 Core R Packages</h3>
+<p>The application relies on a robust stack of R packages to handle data manipulation, statistical testing, and advanced visual analytics:</p>
 <ul>
-<li>Interactive filtering by demographic variables<br>
-</li>
-<li>Distribution and comparison visualisations<br>
-</li>
-<li>Correlation analysis between key variables</li>
+<li><p><strong>UI &amp; Reactivity:</strong> <code>shiny</code>, <code>shinydashboard</code></p></li>
+<li><p><strong>Data Manipulation:</strong> <code>tidyverse</code> (specifically <code>dplyr</code> for data wrangling and <code>mutate</code>/<code>cut</code> for binning continuous variables).</p></li>
+<li><p><strong>Statistical Visualisations:</strong> * <code>ggstatsplot</code>: For generating confirmatory data analysis (CDA) plots with rich statistical details (<code>ggbetweenstats</code>, <code>ggbarstats</code>).</p>
+<ul>
+<li><code>ggdist</code>: For creating advanced distribution visualisations like Raincloud plots (<code>stat_halfeye</code>, <code>stat_dots</code>).</li>
+</ul></li>
+<li><p><strong>Aesthetics &amp; Formatting:</strong> * <code>ggthemes</code>: To apply professional, publication-ready themes (<code>theme_economist()</code>).</p>
+<ul>
+<li><code>scales</code>: For formatting heavily skewed financial axes (<code>scale_y_log10</code>, <code>label_number</code>).</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="module-1-exploratory-confirmatory-analysis-eda-cda" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="module-1-exploratory-confirmatory-analysis-eda-cda"><span class="header-section-number">5</span> 4.2 Module 1: Exploratory &amp; Confirmatory Analysis (EDA &amp; CDA)</h2>
+<p>This module serves as the foundational entry point, allowing users to dynamically cross-filter socio-demographic factors against financial behaviors.</p>
+<p><strong>UI Layout &amp; Components:</strong></p>
+<ul>
+<li><p><strong>Inputs:</strong> Utilises <code>selectInput()</code> within <code>box()</code> containers to allow users to select specific demographic variables (e.g., Education Level, Income Bracket) and financial metrics (e.g., Transaction Count, Total Volume).</p></li>
+<li><p><strong>Layout:</strong> Employs reactive <code>fluidRow()</code> grids. To manage memory and avoid cognitive overload, heavy visualisations are grouped using <code>tabBox()</code> and <code>tabPanel()</code> for lazy loading.</p></li>
+<li><p><strong>Outputs:</strong> Multiple <code>plotOutput()</code> elements rendering responsive <code>ggplot2</code> charts.</p></li>
+</ul>
+<p><strong>Core Analytical Functions:</strong></p>
+<ul>
+<li><p><strong>EDA:</strong> Generates Raincloud plots combining <code>stat_halfeye()</code>, <code>geom_boxplot()</code>, and <code>stat_dots()</code> to show both density and exact data points. Financial metrics utilize <code>geom_histogram()</code> and <code>stat_ecdf()</code> for cumulative proportion tracking. <code>reactive()</code> expressions are used server-side to prevent redundant calculations.</p></li>
+<li><p><strong>CDA (ANOVA Test Tab):</strong> Uses <code>ggbetweenstats()</code> to perform robust, nonparametric analysis of variance comparing average transaction values across selected demographics.</p></li>
+<li><p><strong>CDA (Association Tab):</strong> Uses <code>ggbarstats()</code> to perform Chi-Square tests of association, visualizing the relationship between dynamically binned financial metrics and demographic groups.</p></li>
+</ul>
+</section>
+<section id="module-2-customer-segmentation-clustering" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="module-2-customer-segmentation-clustering"><span class="header-section-number">6</span> 4.3 Module 2: Customer Segmentation (Clustering)</h2>
+<p><strong>Developer:</strong> Chandru Kolanchiyappan</p>
+<p>This module utilizes unsupervised machine learning to group customers with similar financial behaviors, digital engagement levels, and socio-demographic characteristics, moving beyond simple demographic profiling to establish true behavioral personas.</p>
+<p><strong>UI Layout &amp; Components:</strong></p>
+<ul>
+<li><p><strong>Inputs:</strong> <code>sliderInput()</code> to allow users to dynamically adjust the number of clusters (<em>k</em>), alongside <code>selectInput()</code> to toggle which specific feature space (e.g., Financial Metrics vs.&nbsp;Engagement Metrics) to project onto the visualisations.</p></li>
+<li><p><strong>Layout:</strong> A multi-pane <code>fluidRow()</code> layout. The top section handles cluster evaluation diagnostics (Elbow and Silhouette plots) via a <code>tabBox()</code>. The main body contrasts 2D cluster projections with standard profiling charts (boxplots and parallel coordinates).</p></li>
+<li><p><strong>Outputs:</strong> Multiple <code>plotOutput()</code> elements designed to handle both base R statistical plots and advanced <code>ggplot2</code>/<code>factoextra</code> objects.</p></li>
+</ul>
+<p><strong>Core Analytical Functions &amp; Packages:</strong></p>
+<ul>
+<li><p><strong>Pre-processing:</strong> Uses <code>tidyr::drop_na()</code> for handling missing values and base R <code>scale()</code> to standardize the 12 selected continuous variables (e.g., <code>tx_count</code>, <code>customer_lifetime_value</code>, <code>app_logins_frequency</code>) so they contribute equally to the distance calculations.</p></li>
+<li><p><strong>Feature Selection:</strong> Employs the <code>corrplot</code> package to generate correlation matrices, ensuring redundant variables are identified prior to clustering.</p></li>
+<li><p><strong>Clustering Algorithm:</strong> Utilises the base R <code>kmeans()</code> algorithm (specifically using <code>nstart = 25</code> to ensure algorithmic stability) to partition the data.</p></li>
+<li><p><strong>Evaluation Diagnostics:</strong> Calculates Within-Cluster Sum of Squares (WSS) and Average Silhouette Width (using the <code>cluster</code> package) to justify the optimal selection of <em>k=4</em> clusters.</p></li>
+<li><p><strong>Visual Analytics:</strong> * Uses <code>factoextra::fviz_cluster()</code> to project the multi-dimensional clusters onto a 2D Principal Component Analysis (PCA) space, complete with convex hulls.</p>
+<ul>
+<li><p>Uses <code>ggplot2</code> to generate diagnostic boxplots (<code>geom_boxplot</code>) comparing financial distributions across the 4 clusters, and standardized line plots (<code>geom_line</code>) to construct a multi-variable “persona profile” for each segment.</p></li>
+<li><p>Generates 100% stacked bar charts (<code>geom_bar(position = "fill")</code>) to assess demographic compositions (e.g., Income Bracket) within each algorithmically defined cluster.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="module-3-predictive-modelling" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="module-3-predictive-modelling"><span class="header-section-number">7</span> 4.4 Module 3: Predictive Modelling</h2>
+<p>This module allows users to interact with machine learning models designed to forecast two critical business outcomes: <strong>Customer Satisfaction Scores</strong> (experience-based) and <strong>Average Daily Transactions</strong> (behaviour-based). To account for the heavy right-skewness typical in financial data, the transaction target variable utilizes a log transformation (<code>log1p</code>).</p>
+<p><strong>UI Layout &amp; Components:</strong></p>
+<ul>
+<li><p><strong>Inputs:</strong> <code>selectInput()</code> to allow users to toggle between the target variables (Satisfaction vs.&nbsp;Transaction Frequency), and <code>radioButtons()</code> to select which machine learning algorithm to evaluate (Linear Regression, Decision Tree, Random Forest, or Ordinal Regression).</p></li>
+<li><p><strong>Layout:</strong> A structured, multi-row <code>fluidPage()</code> or <code>tabBox()</code> layout. The top row utilizes <code>valueBox()</code> or <code>infoBox()</code> elements to present global, real-time performance metrics for the selected model. The main area splits into visual diagnostic panels.</p></li>
+<li><p><strong>Outputs:</strong> Multiple <code>plotOutput()</code> elements to render model diagnostics and tree structures, alongside <code>dataTableOutput()</code> for detailed numeric comparisons of model metrics across validation and test sets.</p></li>
+</ul>
+<p><strong>Core Analytical Functions &amp; Packages:</strong></p>
+<ul>
+<li><p><strong>Modelling Framework:</strong> The entire predictive pipeline is constructed using the robust <strong><code>tidymodels</code></strong> ecosystem. This includes using <code>recipes</code> for preprocessing (e.g., <code>step_impute_median()</code>, <code>step_dummy()</code> for categorical encoding, and <code>step_zv()</code> to remove zero-variance predictors) and <code>workflows</code> to seamlessly bundle preprocessing with model specifications.</p></li>
+<li><p><strong>Algorithms Implemented:</strong></p>
+<ul>
+<li><p><strong>Linear &amp; Ordinal Regression:</strong> Baseline parametric modelling using the <code>lm</code> engine to extract interpretable coefficients.</p></li>
+<li><p><strong>Decision Trees:</strong> Non-linear, rule-based modelling using the <code>rpart</code> engine. Hyperparameters (<code>tree_depth</code>, <code>cost_complexity</code>, <code>min_n</code>) are rigorously tuned using 5-fold cross-validation (<code>vfold_cv()</code>) and <code>tune_grid()</code>.</p></li>
+<li><p><strong>Random Forest:</strong> High-performance ensemble modelling utilizing the <code>ranger</code> engine. To optimize the heavy computational load of tuning (<code>mtry</code>, <code>min_n</code>), the <strong><code>doParallel</code></strong> package is utilized to register multi-core parallel processing.</p></li>
+</ul></li>
+<li><p><strong>Evaluation Metrics:</strong> Uses the <code>yardstick</code> package (<code>metric_set</code>) to calculate continuous error metrics: RMSE, MAE, and R-squared (<span class="math inline">\(R^2\)</span>).</p></li>
+<li><p><strong>Visual Analytics Integration:</strong></p>
+<ul>
+<li><p><strong>Feature Importance:</strong> Employs the <strong><code>vip</code></strong> package to generate Variable Importance Plots, visually ranking which demographic and engagement factors most heavily dictate financial behavior.</p></li>
+<li><p><strong>Tree Interpretability:</strong> Utilizes <strong><code>rpart.plot</code></strong> and <strong><code>partykit</code></strong> to render visual, easily interpretable decision tree diagrams for non-technical stakeholders.</p></li>
+<li><p><strong>Diagnostic Plots:</strong> Leverages <code>ggplot2</code> (assisted by <code>patchwork</code> for layout combining) to generate Predicted vs.&nbsp;Actual scatter plots (with an overlaid 45-degree identity line) and Residual plots, allowing users to visually assess error variance and model fit.Visualises the most critical drivers of behaviour using variable importance plots (e.g., <code>vip::vip()</code>).</p></li>
+</ul></li>
 </ul>
 <hr>
 </section>
-<section id="customer-segmentation-module" class="level3" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="customer-segmentation-module"><span class="header-section-number">4.2</span> Customer Segmentation Module</h3>
-<ul>
-<li>Visualization of customer clusters<br>
-</li>
-<li>Cluster comparison dashboards<br>
-</li>
-<li>Profiling of different customer segments</li>
-</ul>
-<hr>
-</section>
-<section id="predictive-analytics-module" class="level3" data-number="4.3">
-<h3 data-number="4.3" class="anchored" data-anchor-id="predictive-analytics-module"><span class="header-section-number">4.3</span> Predictive Analytics Module</h3>
-<ul>
-<li>Model performance comparison<br>
-</li>
-<li>Feature importance visualization<br>
-</li>
-<li>Predicted vs actual analysis<br>
-</li>
-<li>Insights into key drivers of behaviour</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="project-timeline-and-work-allocation" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="project-timeline-and-work-allocation"><span class="header-section-number">5</span> Project Timeline and Work Allocation</h2>
+<section id="project-timeline-and-work-allocation" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="project-timeline-and-work-allocation"><span class="header-section-number">8</span> Project Timeline and Work Allocation</h2>
 <p><img src="ganttchart.jpeg" class="img-fluid"></p>
-<section id="team-responsibilities" class="level3" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="team-responsibilities"><span class="header-section-number">5.1</span> Team Responsibilities</h3>
+<section id="team-responsibilities" class="level3" data-number="8.1">
+<h3 data-number="8.1" class="anchored" data-anchor-id="team-responsibilities"><span class="header-section-number">8.1</span> Team Responsibilities</h3>
 <ul>
 <li><strong>EDA &amp; CDA Module</strong> – Ng Meng Ye<br>
 </li>
@@ -502,8 +581,8 @@ Contains detailed transaction information such as:</p>
 <hr>
 </section>
 </section>
-<section id="expected-value" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="expected-value"><span class="header-section-number">6</span> Expected Value</h2>
+<section id="expected-value" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="expected-value"><span class="header-section-number">9</span> Expected Value</h2>
 <p>This project provides:</p>
 <ul>
 <li>A deeper understanding of customer financial behaviour<br>
@@ -572,13 +651,14 @@ Contains detailed transaction information such as:</p>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
