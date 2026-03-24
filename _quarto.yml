@@ -29,7 +29,7 @@ website:
     right:
       - href: team.qmd
         text: The Team
-      - href: shiny.qmd
+      - href: https://colombianfintechfinancialanalytics.shinyapps.io/isss608_group10_shinyapp/
         text: Shiny App
       - icon: github
         href: https://github.com/govanzz/isss608-group10-project

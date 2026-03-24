@@ -63,7 +63,7 @@ Both datasets are linked through a common identifier: `customer_id`.
 ### Key Variable Categories
 
 | Category | Variables | Purpose |
-|--------------------------|--------------------------|---------------------|
+|----|----|----|
 | Demographics | Age, Income, Education, Household Size | Customer segmentation |
 | Engagement | App logins, Feature usage, Active products | Digital behaviour |
 | Financial | Transaction count, Avg value, Total volume | Financial activity |
