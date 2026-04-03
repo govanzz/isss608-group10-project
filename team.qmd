@@ -1,0 +1,50 @@
+---
+title: "The Team"
+format: html
+toc: false
+---
+
+## Meet the Team
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+
+<!-- Gautamgovan -->
+<div style="flex: 1 1 300px; border: 1px solid #e0e0e0; padding: 20px; border-radius: 12px;">
+
+### Gautamgovan Elangovan  
+📧 gautamgovan@gmail.com  
+🔗 [GitHub](https://github.com/govanzz)
+
+**Role:** Predictive Modelling & System Integration  
+
+Worked on developing machine learning models to predict customer satisfaction and transaction behaviour. Also handled website integration and deployment workflows.
+
+</div>
+
+<!-- Meng Ye -->
+<div style="flex: 1 1 300px; border: 1px solid #e0e0e0; padding: 20px; border-radius: 12px;">
+
+### Ng Meng Ye  
+📧 mengye1996@outlook.com  
+🔗 [GitHub](https://github.com/ngmengye)
+
+**Role:** Exploratory Data Analysis & Shiny Dashboard  
+
+Led the development of the interactive dashboard, including statistical analysis modules and visualization design.
+
+</div>
+
+<!-- Chandru -->
+<div style="flex: 1 1 300px; border: 1px solid #e0e0e0; padding: 20px; border-radius: 12px;">
+
+### Chandru Kolanchiyappan  
+📧 kchandru2000@gmail.com  
+🔗 [GitHub](https://github.com/chandrugtx8)
+
+**Role:** Customer Segmentation (Clustering)  
+
+Developed clustering models to identify user segments and contributed to integrating analytical outputs into the application.
+
+</div>
+
+</div>
