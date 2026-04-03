@@ -1,0 +1,85 @@
+# ISSS608 Group 10 Meeting Minutes
+
+**Project Meeting 4:** Final Integration, Presentation Preparation & System Readiness
+
+**Date:** 03 Apr 2026
+
+**Time:** 6:30am – 6:50am
+
+**In Attendance:** Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan
+
+## Agenda Items
+
+1. Final System Integration (Website & Shiny App)
+
+2. Poster Finalisation & Deployment
+
+3. Presentation Strategy & Role Alignment
+
+4. Final Checks: Findings, Team Page & Submission Readiness
+
+---
+
+## 1. Final Integration: Website & Shiny Application
+
+The team conducted a final review of the project components to ensure seamless integration across all deliverables.
+
+- **Website Updates:** The poster page has been successfully added to the Quarto website and linked through the navigation bar.
+
+- **Version Control:** Team members confirmed the use of Git pull workflows to synchronize the latest updates across contributors.
+
+- **Shiny App Integration:** The Shiny dashboard remains hosted externally and will be demonstrated live during the presentation.
+
+- **Data Consistency:** Minor differences in preprocessing approaches (e.g., customer ID usage and cleaning steps) were discussed, with alignment ensured for final deployment.
+
+---
+
+## 2. Project Poster: Finalisation & Deployment
+
+The poster was reviewed as the primary storytelling artifact for the presentation.
+
+- **Final Objective:** Ensure the poster clearly communicates the full analytical pipeline from EDA → Clustering → Predictive Modelling.
+
+- **Design Status:** Poster content and layout are finalized and ready for printing.
+
+- **Website Integration:** Poster image successfully embedded into the project website for online access.
+
+- **Narrative Alignment:** The poster will serve as the central anchor during the presentation, supported by live demonstrations from the Shiny application.
+
+---
+
+## 3. Presentation Strategy & Role Alignment
+
+The team aligned on how the presentation will be delivered during the session.
+
+- **Presentation Format:** Informal walkthrough format where attendees approach the team’s station.
+
+- **Demonstration Flow:**
+    - Start with poster overview
+    - Transition into Shiny app demonstration
+    - Use interactivity to explain key findings
+
+- **Role Allocation:**
+    - **EDA & Dashboard:** Ng Meng Ye
+    - **Clustering:** Chandru Kolanchiyappan
+    - **Predictive Modelling & Integration:** Gautamgovan Elangovan
+
+- **Strategy:** The Shiny app will be used dynamically to engage the audience and extend discussion time where needed.
+
+---
+
+## 4. Final Checks: Findings, Team Page & Submission
+
+The team identified remaining minor components to be completed before final submission.
+
+- **Findings Page:** To be derived from poster insights and summarised as overall project conclusions.
+
+- **Team Page:** To include member names and contact details for completeness.
+
+- **Submission Plan:** Final refinements will be completed post-presentation, with submission scheduled before the deadline.
+
+---
+
+## Summary
+
+This meeting focused on final readiness for the project presentation. All major components—including the website, poster, and Shiny application—are complete and integrated. Remaining tasks are minor and administrative in nature. The team is fully prepared for presentation and final submission.

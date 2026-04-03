@@ -49,67 +49,88 @@
     "text": "6 Expected Value\nThis project provides:\n\nA deeper understanding of customer financial behaviour\n\nIdentification of key drivers of transaction activity\n\nData-driven insights for fintech decision-making\n\nA scalable visual analytics framework for future applications\n\nThe integration of statistical analysis, clustering, and predictive modelling ensures that both behavioural patterns and predictive insights are captured effectively."
   },
   {
-    "objectID": "meetingminutes/projectmeeting3.html",
-    "href": "meetingminutes/projectmeeting3.html",
+    "objectID": "meetingminutes/projectmeeting4.html",
+    "href": "meetingminutes/projectmeeting4.html",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "Project Meeting 3: Project Netlify, Project Poster\nDate: 21 Mar 2026\nTime: 8pm – 8.30pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\n\n\n\nNetlify Deployment & CI/CD Troubleshooting\nProject Poster: Design and Data Storytelling\nFinal Website Audit (Internal Review)\n\n\n\n\nThe team discussed the current status of the Netlify deployment.\n\nCI/CD Sync: Resolved issues regarding the _site and _freeze folders causing merge conflicts. The team successfully implemented a .gitignore to ensure only source .qmd and .R files are tracked.\nLink Resolution: Addressed the “Unable to resolve link target” warnings for proposal.qmd and findings.qmd. All navigation links in the cosmo theme sidebar are now functional.\nShiny Integration: Confirmed the Shiny application will be hosted on a separate ShinyApps.io server and embedded/linked within the main Netlify site.\n\n\n\n\nThe team brainstormed the visual layout for the project poster. The goal is to distill the complex COFINFAD analysis into a single, high-impact visual.\n\nCore Narrative: The poster will focus on the “User Journey”—moving from raw demographic data (EDA) to behavioral segments (Clustering) and finally to satisfaction drivers (Prediction).\nKey Visuals to Include:\n\nThe Half-Eye plots from the EDA phase to show data density.\nA Cluster Dendrogram or PCA plot to visualize customer segmentation.\nA Variable Importance Plot from the Random Forest model to show what truly drives Colombian fintech satisfaction."
+    "text": "Project Meeting 4: Final Integration, Presentation Preparation & System Readiness\nDate: 03 Apr 2026\nTime: 6:30am – 6:50am\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\n\n\n\nFinal System Integration (Website & Shiny App)\nPoster Finalisation & Deployment\nPresentation Strategy & Role Alignment\nFinal Checks: Findings, Team Page & Submission Readiness\n\n\n\n\n\nThe team conducted a final review of the project components to ensure seamless integration across all deliverables.\n\nWebsite Updates: The poster page has been successfully added to the Quarto website and linked through the navigation bar.\nVersion Control: Team members confirmed the use of Git pull workflows to synchronize the latest updates across contributors.\nShiny App Integration: The Shiny dashboard remains hosted externally and will be demonstrated live during the presentation.\nData Consistency: Minor differences in preprocessing approaches (e.g., customer ID usage and cleaning steps) were discussed, with alignment ensured for final deployment.\n\n\n\n\n\nThe poster was reviewed as the primary storytelling artifact for the presentation.\n\nFinal Objective: Ensure the poster clearly communicates the full analytical pipeline from EDA → Clustering → Predictive Modelling.\nDesign Status: Poster content and layout are finalized and ready for printing.\nWebsite Integration: Poster image successfully embedded into the project website for online access.\nNarrative Alignment: The poster will serve as the central anchor during the presentation, supported by live demonstrations from the Shiny application.\n\n\n\n\n\nThe team aligned on how the presentation will be delivered during the session.\n\nPresentation Format: Informal walkthrough format where attendees approach the team’s station.\nDemonstration Flow:\n\nStart with poster overview\nTransition into Shiny app demonstration\nUse interactivity to explain key findings\n\nRole Allocation:\n\nEDA & Dashboard: Ng Meng Ye\nClustering: Chandru Kolanchiyappan\nPredictive Modelling & Integration: Gautamgovan Elangovan\n\nStrategy: The Shiny app will be used dynamically to engage the audience and extend discussion time where needed.\n\n\n\n\n\nThe team identified remaining minor components to be completed before final submission.\n\nFindings Page: To be derived from poster insights and summarised as overall project conclusions.\nTeam Page: To include member names and contact details for completeness.\nSubmission Plan: Final refinements will be completed post-presentation, with submission scheduled before the deadline.\n\n\n\n\n\nThis meeting focused on final readiness for the project presentation. All major components—including the website, poster, and Shiny application—are complete and integrated. Remaining tasks are minor and administrative in nature. The team is fully prepared for presentation and final submission."
   },
   {
-    "objectID": "meetingminutes/projectmeeting3.html#agenda-items",
-    "href": "meetingminutes/projectmeeting3.html#agenda-items",
+    "objectID": "meetingminutes/projectmeeting4.html#agenda-items",
+    "href": "meetingminutes/projectmeeting4.html#agenda-items",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "Netlify Deployment & CI/CD Troubleshooting\nProject Poster: Design and Data Storytelling\nFinal Website Audit (Internal Review)"
+    "text": "Final System Integration (Website & Shiny App)\nPoster Finalisation & Deployment\nPresentation Strategy & Role Alignment\nFinal Checks: Findings, Team Page & Submission Readiness"
   },
   {
-    "objectID": "meetingminutes/projectmeeting3.html#project-netlify-deployment-integration",
-    "href": "meetingminutes/projectmeeting3.html#project-netlify-deployment-integration",
+    "objectID": "meetingminutes/projectmeeting4.html#final-integration-website-shiny-application",
+    "href": "meetingminutes/projectmeeting4.html#final-integration-website-shiny-application",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "The team discussed the current status of the Netlify deployment.\n\nCI/CD Sync: Resolved issues regarding the _site and _freeze folders causing merge conflicts. The team successfully implemented a .gitignore to ensure only source .qmd and .R files are tracked.\nLink Resolution: Addressed the “Unable to resolve link target” warnings for proposal.qmd and findings.qmd. All navigation links in the cosmo theme sidebar are now functional.\nShiny Integration: Confirmed the Shiny application will be hosted on a separate ShinyApps.io server and embedded/linked within the main Netlify site."
+    "text": "The team conducted a final review of the project components to ensure seamless integration across all deliverables.\n\nWebsite Updates: The poster page has been successfully added to the Quarto website and linked through the navigation bar.\nVersion Control: Team members confirmed the use of Git pull workflows to synchronize the latest updates across contributors.\nShiny App Integration: The Shiny dashboard remains hosted externally and will be demonstrated live during the presentation.\nData Consistency: Minor differences in preprocessing approaches (e.g., customer ID usage and cleaning steps) were discussed, with alignment ensured for final deployment."
   },
   {
-    "objectID": "meetingminutes/projectmeeting3.html#project-poster-communicating-the-results",
-    "href": "meetingminutes/projectmeeting3.html#project-poster-communicating-the-results",
+    "objectID": "meetingminutes/projectmeeting4.html#project-poster-finalisation-deployment",
+    "href": "meetingminutes/projectmeeting4.html#project-poster-finalisation-deployment",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "The team brainstormed the visual layout for the project poster. The goal is to distill the complex COFINFAD analysis into a single, high-impact visual.\n\nCore Narrative: The poster will focus on the “User Journey”—moving from raw demographic data (EDA) to behavioral segments (Clustering) and finally to satisfaction drivers (Prediction).\nKey Visuals to Include:\n\nThe Half-Eye plots from the EDA phase to show data density.\nA Cluster Dendrogram or PCA plot to visualize customer segmentation.\nA Variable Importance Plot from the Random Forest model to show what truly drives Colombian fintech satisfaction."
+    "text": "The poster was reviewed as the primary storytelling artifact for the presentation.\n\nFinal Objective: Ensure the poster clearly communicates the full analytical pipeline from EDA → Clustering → Predictive Modelling.\nDesign Status: Poster content and layout are finalized and ready for printing.\nWebsite Integration: Poster image successfully embedded into the project website for online access.\nNarrative Alignment: The poster will serve as the central anchor during the presentation, supported by live demonstrations from the Shiny application."
   },
   {
-    "objectID": "meetingminutes/projectmeeting1.html",
-    "href": "meetingminutes/projectmeeting1.html",
+    "objectID": "meetingminutes/projectmeeting4.html#presentation-strategy-role-alignment",
+    "href": "meetingminutes/projectmeeting4.html#presentation-strategy-role-alignment",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "Project Meeting 1: Project Proposal, Project Methodology, Project Timeline\nDate: 28 Feb 2026\nTime: 3:45pm – 4.15pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\n\n\n\nSelection of Project Topic & Dataset\n\n\n\nDefinition of Project Methodology (The Three Pillars)\nReview of Project Timeline & Gantt Chart\nAction Items & Follow-up\n\n\n\n\nThe team evaluated three available datasets and reached a consensus to proceed with the Colombian Fintech Financial Analytics (COFINFAD) dataset.\n\nRational: The dataset is comprehensive, structured, and documentation is readily available.\nAccessibility: The download process is straightforward, allowing the team to begin data wrangling immediately.\n\n\n\n\n\n\nThe project will be divided into three distinct analytical components. Each member will lead one module to ensure comprehensive coverage of the visual analytics spectrum:\n\nModule 1: Exploratory Data Analysis (EDA) * Lead: Ng Meng Ye\n\nFocus: Investigating the correlation between socio-demographic markers (age, income) and transaction behaviors (frequency, volume).\n\nModule 2: Customer Segmentation (Clustering) * Lead: Chandru Kolanchiyappan\n\nFocus: Applying clustering techniques (e.g., K-Means) to identify distinct user personas based on financial engagement profiles.\n\nModule 3: Predictive Modelling * Lead: Gautamgovan Elangovan\n\nFocus: Developing models to predict Customer Satisfaction and Transaction Activity using behavioral and digital engagement variables.\n\n\n\n\n\n\nThe team agreed on the detailed task and project timeline set out in the Gantt Chart enclosed."
+    "text": "The team aligned on how the presentation will be delivered during the session.\n\nPresentation Format: Informal walkthrough format where attendees approach the team’s station.\nDemonstration Flow:\n\nStart with poster overview\nTransition into Shiny app demonstration\nUse interactivity to explain key findings\n\nRole Allocation:\n\nEDA & Dashboard: Ng Meng Ye\nClustering: Chandru Kolanchiyappan\nPredictive Modelling & Integration: Gautamgovan Elangovan\n\nStrategy: The Shiny app will be used dynamically to engage the audience and extend discussion time where needed."
   },
   {
-    "objectID": "meetingminutes/projectmeeting1.html#agenda-items",
-    "href": "meetingminutes/projectmeeting1.html#agenda-items",
+    "objectID": "meetingminutes/projectmeeting4.html#final-checks-findings-team-page-submission",
+    "href": "meetingminutes/projectmeeting4.html#final-checks-findings-team-page-submission",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "Selection of Project Topic & Dataset\n\n\n\nDefinition of Project Methodology (The Three Pillars)\nReview of Project Timeline & Gantt Chart\nAction Items & Follow-up"
+    "text": "The team identified remaining minor components to be completed before final submission.\n\nFindings Page: To be derived from poster insights and summarised as overall project conclusions.\nTeam Page: To include member names and contact details for completeness.\nSubmission Plan: Final refinements will be completed post-presentation, with submission scheduled before the deadline."
   },
   {
-    "objectID": "meetingminutes/projectmeeting1.html#agenda-item-1-decision-on-project-topic",
-    "href": "meetingminutes/projectmeeting1.html#agenda-item-1-decision-on-project-topic",
+    "objectID": "meetingminutes/projectmeeting4.html#summary",
+    "href": "meetingminutes/projectmeeting4.html#summary",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "The team evaluated three available datasets and reached a consensus to proceed with the Colombian Fintech Financial Analytics (COFINFAD) dataset.\n\nRational: The dataset is comprehensive, structured, and documentation is readily available.\nAccessibility: The download process is straightforward, allowing the team to begin data wrangling immediately."
+    "text": "This meeting focused on final readiness for the project presentation. All major components—including the website, poster, and Shiny application—are complete and integrated. Remaining tasks are minor and administrative in nature. The team is fully prepared for presentation and final submission."
   },
   {
-    "objectID": "meetingminutes/projectmeeting1.html#agenda-item-2-discussion-on-the-project-methodology",
-    "href": "meetingminutes/projectmeeting1.html#agenda-item-2-discussion-on-the-project-methodology",
+    "objectID": "meetingminutes/projectmeeting2.html",
+    "href": "meetingminutes/projectmeeting2.html",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "The project will be divided into three distinct analytical components. Each member will lead one module to ensure comprehensive coverage of the visual analytics spectrum:\n\nModule 1: Exploratory Data Analysis (EDA) * Lead: Ng Meng Ye\n\nFocus: Investigating the correlation between socio-demographic markers (age, income) and transaction behaviors (frequency, volume).\n\nModule 2: Customer Segmentation (Clustering) * Lead: Chandru Kolanchiyappan\n\nFocus: Applying clustering techniques (e.g., K-Means) to identify distinct user personas based on financial engagement profiles.\n\nModule 3: Predictive Modelling * Lead: Gautamgovan Elangovan\n\nFocus: Developing models to predict Customer Satisfaction and Transaction Activity using behavioral and digital engagement variables."
+    "text": "Project Meeting 2: R Shiny dashboard modules\nDate: 04 Mar 2026\nTime: 3:45pm – 4.15pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\n\n\n\n\nDiscussion on R Shiny dashboard modules\n\nExploratory Data Analysis\nCustomer Segmentation (Clustering)\nPredictive Modelling\n\n\n\n\n\n\nThe team reviewed the hand-drawn wireframes for the application. The dashboard will move beyond static plots to allow user-driven statistical testing.\nTab 1: Exploratory Data Analysis (The Dashboard)\n\nVisuals: Implementation of Half-Eye graphs (combining density and boxplots) to show distributions of variables like Marital Status and Education Level.\nInteractivity: Drop-down menus to filter by continuous variables (Transaction Count, Transaction Value).\n\nTab 2: Confirmatory Analysis (ANOVA/Kruskal-Wallis)\n\nFeature: A dedicated page for group comparisons.\nInteractivity: Users can select \\(X\\) and \\(Y\\) variables.\nStatistical Choice: A toggle to switch between Parametric (ANOVA) and Non-Parametric (Kruskal-Wallis) tests depending on the data distribution.\n\nTab 3: Relationship Analysis (Correlation)\n\nFeature: Interactive Scatter Plots and Correlation Matrices.\nInteractivity: Toggle between Pearson (parametric) and Spearman/Kendall (non-parametric) correlation methods based on user selection.\n\nTab 4 & 5: Advanced Analytics\n\nClustering: User-defined cluster counts (\\(k\\) value) and variable selection for segmentation.\nPredictive Model: UI for inputting hypothetical user data to predict Satisfaction or Transaction behavior."
   },
   {
-    "objectID": "meetingminutes/projectmeeting1.html#agenda-item-3-consensus-on-the-project-timeline",
-    "href": "meetingminutes/projectmeeting1.html#agenda-item-3-consensus-on-the-project-timeline",
+    "objectID": "meetingminutes/projectmeeting2.html#agenda-items",
+    "href": "meetingminutes/projectmeeting2.html#agenda-items",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "The team agreed on the detailed task and project timeline set out in the Gantt Chart enclosed."
+    "text": "Discussion on R Shiny dashboard modules\n\nExploratory Data Analysis\nCustomer Segmentation (Clustering)\nPredictive Modelling"
+  },
+  {
+    "objectID": "meetingminutes/projectmeeting2.html#r-shiny-dashboard-design-storyboard-review",
+    "href": "meetingminutes/projectmeeting2.html#r-shiny-dashboard-design-storyboard-review",
+    "title": "ISSS608 Group 10 Meeting Minutes",
+    "section": "",
+    "text": "The team reviewed the hand-drawn wireframes for the application. The dashboard will move beyond static plots to allow user-driven statistical testing.\nTab 1: Exploratory Data Analysis (The Dashboard)\n\nVisuals: Implementation of Half-Eye graphs (combining density and boxplots) to show distributions of variables like Marital Status and Education Level.\nInteractivity: Drop-down menus to filter by continuous variables (Transaction Count, Transaction Value).\n\nTab 2: Confirmatory Analysis (ANOVA/Kruskal-Wallis)\n\nFeature: A dedicated page for group comparisons.\nInteractivity: Users can select \\(X\\) and \\(Y\\) variables.\nStatistical Choice: A toggle to switch between Parametric (ANOVA) and Non-Parametric (Kruskal-Wallis) tests depending on the data distribution.\n\nTab 3: Relationship Analysis (Correlation)\n\nFeature: Interactive Scatter Plots and Correlation Matrices.\nInteractivity: Toggle between Pearson (parametric) and Spearman/Kendall (non-parametric) correlation methods based on user selection.\n\nTab 4 & 5: Advanced Analytics\n\nClustering: User-defined cluster counts (\\(k\\) value) and variable selection for segmentation.\nPredictive Model: UI for inputting hypothetical user data to predict Satisfaction or Transaction behavior."
+  },
+  {
+    "objectID": "meeting-minutes.html",
+    "href": "meeting-minutes.html",
+    "title": "ISSS608 Group 10 Project Meeting Minutes Records",
+    "section": "",
+    "text": "ISSS608 Group 10 Project Meeting Minutes Records\n\nProject Meeting 1: Project Proposal, Project Methodology, Project Timeline\nDate: 28 Feb 2026\nTime: 3:45pm – 4.15pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\nClick here to view meeting minutes - 1\n\nProject Meeting 2: R Shiny dashboard modules\nDate: 04 Mar 2026\nTime: 3:45pm – 4.15pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\nClick here to view meeting minutes - 2\n\nProject Meeting 3: Project Netlify, Project Poster\nDate: 21 Mar 2026\nTime: 8pm – 8.30pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\nClick here to view meeting minutes - 3\n\nProject Meeting 4: Final Integration, Presentation Preparation & System Readiness\nDate: 03 Apr 2026\nTime: 2:30pm – 3:15pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\nClick here to view meeting minutes - 4"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "index.html",
@@ -168,38 +189,66 @@
     "text": "Each group member contributes an individual analytical component that supports the overall project objective:\n\nExploratory Analysis — socio-demographic correlation and transaction behaviour\nClustering Analysis — customer segmentation using behavioural and engagement variables\nPredictive Modelling — modelling Customer Satisfaction and Transaction Behaviour\n\n\nDeveloped for ISSS608 Visual Analytics."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "meeting-minutes.html",
-    "href": "meeting-minutes.html",
-    "title": "ISSS608 Group 10 Project Meeting Minutes Records",
-    "section": "",
-    "text": "ISSS608 Group 10 Project Meeting Minutes Records\n\nProject Meeting 1: Project Proposal, Project Methodology, Project Timeline\nDate: 28 Feb 2026\nTime: 3:45pm – 4.15pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\nClick here to view meeting minutes - 1\n\nProject Meeting 2: R Shiny dashboard modules\nDate: 04 Mar 2026\nTime: 3:45pm – 4.15pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\nClick here to view meeting minutes - 2\n\nProject Meeting 3: Project Netlify, Project Poster\nDate: 21 Mar 2026\nTime: 8pm – 8.30pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\nClick here to view meeting minutes - 3"
-  },
-  {
-    "objectID": "meetingminutes/projectmeeting2.html",
-    "href": "meetingminutes/projectmeeting2.html",
+    "objectID": "meetingminutes/projectmeeting1.html",
+    "href": "meetingminutes/projectmeeting1.html",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "Project Meeting 2: R Shiny dashboard modules\nDate: 04 Mar 2026\nTime: 3:45pm – 4.15pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\n\n\n\n\nDiscussion on R Shiny dashboard modules\n\nExploratory Data Analysis\nCustomer Segmentation (Clustering)\nPredictive Modelling\n\n\n\n\n\n\nThe team reviewed the hand-drawn wireframes for the application. The dashboard will move beyond static plots to allow user-driven statistical testing.\nTab 1: Exploratory Data Analysis (The Dashboard)\n\nVisuals: Implementation of Half-Eye graphs (combining density and boxplots) to show distributions of variables like Marital Status and Education Level.\nInteractivity: Drop-down menus to filter by continuous variables (Transaction Count, Transaction Value).\n\nTab 2: Confirmatory Analysis (ANOVA/Kruskal-Wallis)\n\nFeature: A dedicated page for group comparisons.\nInteractivity: Users can select \\(X\\) and \\(Y\\) variables.\nStatistical Choice: A toggle to switch between Parametric (ANOVA) and Non-Parametric (Kruskal-Wallis) tests depending on the data distribution.\n\nTab 3: Relationship Analysis (Correlation)\n\nFeature: Interactive Scatter Plots and Correlation Matrices.\nInteractivity: Toggle between Pearson (parametric) and Spearman/Kendall (non-parametric) correlation methods based on user selection.\n\nTab 4 & 5: Advanced Analytics\n\nClustering: User-defined cluster counts (\\(k\\) value) and variable selection for segmentation.\nPredictive Model: UI for inputting hypothetical user data to predict Satisfaction or Transaction behavior."
+    "text": "Project Meeting 1: Project Proposal, Project Methodology, Project Timeline\nDate: 28 Feb 2026\nTime: 3:45pm – 4.15pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\n\n\n\nSelection of Project Topic & Dataset\n\n\n\nDefinition of Project Methodology (The Three Pillars)\nReview of Project Timeline & Gantt Chart\nAction Items & Follow-up\n\n\n\n\nThe team evaluated three available datasets and reached a consensus to proceed with the Colombian Fintech Financial Analytics (COFINFAD) dataset.\n\nRational: The dataset is comprehensive, structured, and documentation is readily available.\nAccessibility: The download process is straightforward, allowing the team to begin data wrangling immediately.\n\n\n\n\n\n\nThe project will be divided into three distinct analytical components. Each member will lead one module to ensure comprehensive coverage of the visual analytics spectrum:\n\nModule 1: Exploratory Data Analysis (EDA) * Lead: Ng Meng Ye\n\nFocus: Investigating the correlation between socio-demographic markers (age, income) and transaction behaviors (frequency, volume).\n\nModule 2: Customer Segmentation (Clustering) * Lead: Chandru Kolanchiyappan\n\nFocus: Applying clustering techniques (e.g., K-Means) to identify distinct user personas based on financial engagement profiles.\n\nModule 3: Predictive Modelling * Lead: Gautamgovan Elangovan\n\nFocus: Developing models to predict Customer Satisfaction and Transaction Activity using behavioral and digital engagement variables.\n\n\n\n\n\n\nThe team agreed on the detailed task and project timeline set out in the Gantt Chart enclosed."
   },
   {
-    "objectID": "meetingminutes/projectmeeting2.html#agenda-items",
-    "href": "meetingminutes/projectmeeting2.html#agenda-items",
+    "objectID": "meetingminutes/projectmeeting1.html#agenda-items",
+    "href": "meetingminutes/projectmeeting1.html#agenda-items",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "Discussion on R Shiny dashboard modules\n\nExploratory Data Analysis\nCustomer Segmentation (Clustering)\nPredictive Modelling"
+    "text": "Selection of Project Topic & Dataset\n\n\n\nDefinition of Project Methodology (The Three Pillars)\nReview of Project Timeline & Gantt Chart\nAction Items & Follow-up"
   },
   {
-    "objectID": "meetingminutes/projectmeeting2.html#r-shiny-dashboard-design-storyboard-review",
-    "href": "meetingminutes/projectmeeting2.html#r-shiny-dashboard-design-storyboard-review",
+    "objectID": "meetingminutes/projectmeeting1.html#agenda-item-1-decision-on-project-topic",
+    "href": "meetingminutes/projectmeeting1.html#agenda-item-1-decision-on-project-topic",
     "title": "ISSS608 Group 10 Meeting Minutes",
     "section": "",
-    "text": "The team reviewed the hand-drawn wireframes for the application. The dashboard will move beyond static plots to allow user-driven statistical testing.\nTab 1: Exploratory Data Analysis (The Dashboard)\n\nVisuals: Implementation of Half-Eye graphs (combining density and boxplots) to show distributions of variables like Marital Status and Education Level.\nInteractivity: Drop-down menus to filter by continuous variables (Transaction Count, Transaction Value).\n\nTab 2: Confirmatory Analysis (ANOVA/Kruskal-Wallis)\n\nFeature: A dedicated page for group comparisons.\nInteractivity: Users can select \\(X\\) and \\(Y\\) variables.\nStatistical Choice: A toggle to switch between Parametric (ANOVA) and Non-Parametric (Kruskal-Wallis) tests depending on the data distribution.\n\nTab 3: Relationship Analysis (Correlation)\n\nFeature: Interactive Scatter Plots and Correlation Matrices.\nInteractivity: Toggle between Pearson (parametric) and Spearman/Kendall (non-parametric) correlation methods based on user selection.\n\nTab 4 & 5: Advanced Analytics\n\nClustering: User-defined cluster counts (\\(k\\) value) and variable selection for segmentation.\nPredictive Model: UI for inputting hypothetical user data to predict Satisfaction or Transaction behavior."
+    "text": "The team evaluated three available datasets and reached a consensus to proceed with the Colombian Fintech Financial Analytics (COFINFAD) dataset.\n\nRational: The dataset is comprehensive, structured, and documentation is readily available.\nAccessibility: The download process is straightforward, allowing the team to begin data wrangling immediately."
+  },
+  {
+    "objectID": "meetingminutes/projectmeeting1.html#agenda-item-2-discussion-on-the-project-methodology",
+    "href": "meetingminutes/projectmeeting1.html#agenda-item-2-discussion-on-the-project-methodology",
+    "title": "ISSS608 Group 10 Meeting Minutes",
+    "section": "",
+    "text": "The project will be divided into three distinct analytical components. Each member will lead one module to ensure comprehensive coverage of the visual analytics spectrum:\n\nModule 1: Exploratory Data Analysis (EDA) * Lead: Ng Meng Ye\n\nFocus: Investigating the correlation between socio-demographic markers (age, income) and transaction behaviors (frequency, volume).\n\nModule 2: Customer Segmentation (Clustering) * Lead: Chandru Kolanchiyappan\n\nFocus: Applying clustering techniques (e.g., K-Means) to identify distinct user personas based on financial engagement profiles.\n\nModule 3: Predictive Modelling * Lead: Gautamgovan Elangovan\n\nFocus: Developing models to predict Customer Satisfaction and Transaction Activity using behavioral and digital engagement variables."
+  },
+  {
+    "objectID": "meetingminutes/projectmeeting1.html#agenda-item-3-consensus-on-the-project-timeline",
+    "href": "meetingminutes/projectmeeting1.html#agenda-item-3-consensus-on-the-project-timeline",
+    "title": "ISSS608 Group 10 Meeting Minutes",
+    "section": "",
+    "text": "The team agreed on the detailed task and project timeline set out in the Gantt Chart enclosed."
+  },
+  {
+    "objectID": "meetingminutes/projectmeeting3.html",
+    "href": "meetingminutes/projectmeeting3.html",
+    "title": "ISSS608 Group 10 Meeting Minutes",
+    "section": "",
+    "text": "Project Meeting 3: Project Netlify, Project Poster\nDate: 21 Mar 2026\nTime: 8pm – 8.30pm\nIn Attendance: Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan\n\n\n\nNetlify Deployment & CI/CD Troubleshooting\nProject Poster: Design and Data Storytelling\nFinal Website Audit (Internal Review)\n\n\n\n\nThe team discussed the current status of the Netlify deployment.\n\nCI/CD Sync: Resolved issues regarding the _site and _freeze folders causing merge conflicts. The team successfully implemented a .gitignore to ensure only source .qmd and .R files are tracked.\nLink Resolution: Addressed the “Unable to resolve link target” warnings for proposal.qmd and findings.qmd. All navigation links in the cosmo theme sidebar are now functional.\nShiny Integration: Confirmed the Shiny application will be hosted on a separate ShinyApps.io server and embedded/linked within the main Netlify site.\n\n\n\n\nThe team brainstormed the visual layout for the project poster. The goal is to distill the complex COFINFAD analysis into a single, high-impact visual.\n\nCore Narrative: The poster will focus on the “User Journey”—moving from raw demographic data (EDA) to behavioral segments (Clustering) and finally to satisfaction drivers (Prediction).\nKey Visuals to Include:\n\nThe Half-Eye plots from the EDA phase to show data density.\nA Cluster Dendrogram or PCA plot to visualize customer segmentation.\nA Variable Importance Plot from the Random Forest model to show what truly drives Colombian fintech satisfaction."
+  },
+  {
+    "objectID": "meetingminutes/projectmeeting3.html#agenda-items",
+    "href": "meetingminutes/projectmeeting3.html#agenda-items",
+    "title": "ISSS608 Group 10 Meeting Minutes",
+    "section": "",
+    "text": "Netlify Deployment & CI/CD Troubleshooting\nProject Poster: Design and Data Storytelling\nFinal Website Audit (Internal Review)"
+  },
+  {
+    "objectID": "meetingminutes/projectmeeting3.html#project-netlify-deployment-integration",
+    "href": "meetingminutes/projectmeeting3.html#project-netlify-deployment-integration",
+    "title": "ISSS608 Group 10 Meeting Minutes",
+    "section": "",
+    "text": "The team discussed the current status of the Netlify deployment.\n\nCI/CD Sync: Resolved issues regarding the _site and _freeze folders causing merge conflicts. The team successfully implemented a .gitignore to ensure only source .qmd and .R files are tracked.\nLink Resolution: Addressed the “Unable to resolve link target” warnings for proposal.qmd and findings.qmd. All navigation links in the cosmo theme sidebar are now functional.\nShiny Integration: Confirmed the Shiny application will be hosted on a separate ShinyApps.io server and embedded/linked within the main Netlify site."
+  },
+  {
+    "objectID": "meetingminutes/projectmeeting3.html#project-poster-communicating-the-results",
+    "href": "meetingminutes/projectmeeting3.html#project-poster-communicating-the-results",
+    "title": "ISSS608 Group 10 Meeting Minutes",
+    "section": "",
+    "text": "The team brainstormed the visual layout for the project poster. The goal is to distill the complex COFINFAD analysis into a single, high-impact visual.\n\nCore Narrative: The poster will focus on the “User Journey”—moving from raw demographic data (EDA) to behavioral segments (Clustering) and finally to satisfaction drivers (Prediction).\nKey Visuals to Include:\n\nThe Half-Eye plots from the EDA phase to show data density.\nA Cluster Dendrogram or PCA plot to visualize customer segmentation.\nA Variable Importance Plot from the Random Forest model to show what truly drives Colombian fintech satisfaction."
   }
 ]

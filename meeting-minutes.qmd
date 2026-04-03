@@ -1,6 +1,6 @@
 # ISSS608 Group 10 Project Meeting Minutes Records
 
----
+------------------------------------------------------------------------
 
 **Project Meeting 1:** Project Proposal, Project Methodology, Project Timeline
 
@@ -12,7 +12,7 @@
 
 [Click here to view meeting minutes - 1](https://visual-analytics-group-10-project.netlify.app/meetingminutes/projectmeeting1)
 
----
+------------------------------------------------------------------------
 
 **Project Meeting 2:** R Shiny dashboard modules
 
@@ -24,7 +24,7 @@
 
 [Click here to view meeting minutes - 2](https://visual-analytics-group-10-project.netlify.app/meetingminutes/projectmeeting2)
 
----
+------------------------------------------------------------------------
 
 **Project Meeting 3:** Project Netlify, Project Poster
 
@@ -36,4 +36,14 @@
 
 [Click here to view meeting minutes - 3](https://visual-analytics-group-10-project.netlify.app/meetingminutes/projectmeeting3)
 
----
+------------------------------------------------------------------------
+
+**Project Meeting 4:** Final Integration, Presentation Preparation & System Readiness
+
+**Date:** 03 Apr 2026
+
+**Time:** 2:30pm – 3:15pm
+
+**In Attendance:** Ng Meng Ye, Chandru Kolanchiyappan, Gautamgovan Elangovan
+
+[Click here to view meeting minutes - 4](https://visual-analytics-group-10-project.netlify.app/meetingminutes/projectmeeting4)
