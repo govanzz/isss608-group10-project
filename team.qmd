@@ -6,9 +6,16 @@ toc: false
 
 ## Meet the Team
 
+<p style="max-width: 800px;">
+This project was developed by postgraduate students from the 
+<strong>Master of IT in Business (MITB)</strong> programme at 
+<strong>Singapore Management University (SMU)</strong>, specialising in the 
+<strong>Data Science and Analytics track</strong>.
+</p>
+
 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
-<!-- Gautamgovan -->
+<!-- Gautam -->
 <div style="flex: 1 1 300px; border: 1px solid #e0e0e0; padding: 20px; border-radius: 12px;">
 
 ### Gautamgovan Elangovan  
@@ -17,7 +24,7 @@ toc: false
 
 **Role:** Predictive Modelling & System Integration  
 
-Worked on developing machine learning models to predict customer satisfaction and transaction behaviour. Also handled website integration and deployment workflows.
+Developed machine learning models for customer behaviour prediction and handled integration of project components into the deployed website.
 
 </div>
 
@@ -30,7 +37,7 @@ Worked on developing machine learning models to predict customer satisfaction an
 
 **Role:** Exploratory Data Analysis & Shiny Dashboard  
 
-Led the development of the interactive dashboard, including statistical analysis modules and visualization design.
+Led exploratory and statistical analysis and developed the interactive dashboard for visualization and user-driven analysis.
 
 </div>
 
@@ -43,7 +50,7 @@ Led the development of the interactive dashboard, including statistical analysis
 
 **Role:** Customer Segmentation (Clustering)  
 
-Developed clustering models to identify user segments and contributed to integrating analytical outputs into the application.
+Developed clustering models to identify customer segments and contributed to integrating analytical insights into the application.
 
 </div>
 
