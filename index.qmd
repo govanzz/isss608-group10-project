@@ -13,6 +13,8 @@ format:
 # COFINFAD: Colombian Fintech Financial Analysis
 
 A visual analytics project examining how socio-demographic and behavioural factors shape customer financial activity, digital engagement, and satisfaction in the Colombian fintech ecosystem.
+
+<a href="poster.html" class="hero-btn">View Project Poster</a>
 :::
 :::
 :::
@@ -66,6 +68,9 @@ The dataset includes:
 - transaction frequency and value metrics
 - customer satisfaction indicators
 - financial activity features
+
+**Dataset Source:**  
+[COFINFAD Dataset on Mendeley](https://data.mendeley.com/datasets/mhb4zn3258/1)
 
 ## Website Structure
 

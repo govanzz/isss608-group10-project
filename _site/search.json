@@ -81,7 +81,7 @@
     "href": "index.html",
     "title": "COFINFAD: Colombian Fintech Financial Analysis",
     "section": "",
-    "text": "A visual analytics project examining how socio-demographic and behavioural factors shape customer financial activity, digital engagement, and satisfaction in the Colombian fintech ecosystem."
+    "text": "A visual analytics project examining how socio-demographic and behavioural factors shape customer financial activity, digital engagement, and satisfaction in the Colombian fintech ecosystem.\nView Project Poster"
   },
   {
     "objectID": "index.html#project-overview",
@@ -109,7 +109,7 @@
     "href": "index.html#dataset",
     "title": "COFINFAD: Colombian Fintech Financial Analysis",
     "section": "Dataset",
-    "text": "Dataset\nThe analysis is based on the COFINFAD dataset, which contains both customer-level and transaction-level information from a Colombian fintech environment.\nThe dataset includes:\n\nsocio-demographic attributes\nbehavioural and engagement variables\ntransaction frequency and value metrics\ncustomer satisfaction indicators\nfinancial activity features"
+    "text": "Dataset\nThe analysis is based on the COFINFAD dataset, which contains both customer-level and transaction-level information from a Colombian fintech environment.\nThe dataset includes:\n\nsocio-demographic attributes\nbehavioural and engagement variables\ntransaction frequency and value metrics\ncustomer satisfaction indicators\nfinancial activity features\n\nDataset Source:\nCOFINFAD Dataset on Mendeley"
   },
   {
     "objectID": "index.html#website-structure",

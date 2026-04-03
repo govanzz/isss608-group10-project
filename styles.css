@@ -38,18 +38,19 @@ main.content {
 
 .column-screen > .hero-section {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 3rem;
 }
 
 .hero-section {
   position: relative;
   width: 100vw;
   min-height: 70vh;
-  margin: 0 0 4rem;
+  margin: 0 0 3rem;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
   background:
     linear-gradient(var(--hero-overlay), var(--hero-overlay)),
     url("hero.jpg") center center / cover no-repeat;
@@ -57,15 +58,19 @@ main.content {
 }
 
 .hero-content {
-  width: min(960px, calc(100% - 3rem));
+  width: min(700px, calc(100% - 3rem));
   margin: 0 auto;
+  max-width: 700px;
   padding: 7rem 0;
   color: #f8fbff;
+  text-align: center;
 }
 
 .hero-content h1 {
   max-width: 12ch;
   margin: 0 0 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Merriweather", Georgia, serif;
   font-size: clamp(2.4rem, 5vw, 4.75rem);
   line-height: 1.08;
@@ -74,11 +79,32 @@ main.content {
 }
 
 .hero-content p {
-  max-width: 42rem;
+  max-width: 700px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-size: clamp(1.05rem, 1.8vw, 1.3rem);
   line-height: 1.8;
   color: rgba(248, 251, 255, 0.9);
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 8px 16px;
+  background: rgba(115, 125, 140, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(4px);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: rgba(115, 125, 140, 0.58);
 }
 
 .home-content {
@@ -103,7 +129,7 @@ main.content {
 }
 
 .home-content h2:first-of-type {
-  margin-top: 0;
+  margin-top: 2rem;
   padding-top: 0;
   border-top: none;
 }
