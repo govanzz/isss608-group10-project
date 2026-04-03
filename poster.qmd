@@ -1,0 +1,10 @@
+---
+title: "Project Poster"
+format:
+  html:
+    toc: false
+---
+
+
+
+![](final_poster.jpg){fig-alt="Project poster" width="100%"}
