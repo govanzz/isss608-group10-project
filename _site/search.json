@@ -341,5 +341,12 @@
     "title": "COFINFAD: Colombian Fintech Financial Analysis",
     "section": "6 Expected Value",
     "text": "6 Expected Value\nThis project provides:\n\nA deeper understanding of customer financial behaviour\n\nIdentification of key drivers of transaction activity\n\nData-driven insights for fintech decision-making\n\nA scalable visual analytics framework for future applications\n\nThe integration of statistical analysis, clustering, and predictive modelling ensures that both behavioural patterns and predictive insights are captured effectively."
+  },
+  {
+    "objectID": "index.html#findings",
+    "href": "index.html#findings",
+    "title": "COFINFAD: Colombian Fintech Financial Analysis",
+    "section": "Findings",
+    "text": "Findings\nThe COFINFAD project brings together confirmatory analysis, clustering, and predictive modelling into one integrated interpretation of customer behaviour in the Colombian fintech ecosystem.\nThe final findings highlight how demographic variables provide useful context, while behavioural patterns, engagement signals, and transaction activity offer stronger explanatory value across customer groups.\nThe full interpretation is presented in the Findings page, where results from all analytical modules are consolidated into a single narrative."
   }
 ]

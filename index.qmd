@@ -84,13 +84,13 @@ This website documents the development of the project across multiple stages:
 - Team
 - Shiny Application
 
-## Current Status
+## Findings
 
-The project is in its **final stage of completion**.
+The COFINFAD project brings together confirmatory analysis, clustering, and predictive modelling into one integrated interpretation of customer behaviour in the Colombian fintech ecosystem.
 
-All major components, including the **proposal, methodology, poster, Shiny application, and team integration**, have been completed and deployed.
+The final findings highlight how demographic variables provide useful context, while behavioural patterns, engagement signals, and transaction activity offer stronger explanatory value across customer groups.
 
-The only remaining component is the **Findings section**, which will consolidate insights from all analytical modules into a final, cohesive interpretation of customer behaviour within the fintech ecosystem.
+The full interpretation is presented in the [Findings](findings.qmd) page, where results from all analytical modules are consolidated into a single narrative.
 
 ## Team Contribution Overview
 
