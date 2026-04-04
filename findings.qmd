@@ -1,0 +1,259 @@
+---
+title: ""
+format:
+  html:
+    page-layout: full
+    toc: false
+    title-block: false
+---
+
+:::::: column-screen
+::::: findings-hero
+:::: findings-hero-inner
+# Findings
+
+The COFINFAD project combines confirmatory statistics, behavioural segmentation, and predictive modelling to explain how Colombian fintech users differ in spending, engagement, and customer outcomes.
+
+::: findings-pill-row
+[48,723 customers analysed]{.findings-pill} [3 analytical lenses]{.findings-pill} [1 integrated fintech story]{.findings-pill}
+:::
+::::
+:::::
+::::::
+
+:::::::::::::: findings-shell
+:::::: findings-stat-grid
+::: findings-stat-card
+## Confirmatory
+
+Most demographic groups show heavily overlapping financial distributions, suggesting that demographics alone do not strongly explain customer activity.
+:::
+
+::: findings-stat-card
+## Clustering
+
+Customer segments become much clearer when behaviour and value variables are analysed together rather than demographic labels alone.
+:::
+
+::: findings-stat-card
+## Predictive
+
+Machine learning is much stronger for **satisfaction score** than for **transaction behaviour**, with Random Forest delivering the best satisfaction model.
+:::
+::::::
+
+## Executive Summary
+
+Three major conclusions emerged from the project.
+
+-   **First, demographic variables do not create large financial divides on their own.** Across education level, income bracket, marital status, and gender, transaction distributions remain strongly right-skewed with substantial overlap across groups.
+-   **Second, segmentation adds more value than simple demographic slicing.** Clustering reveals distinct customer personas with meaningful differences in age, average transaction value, and total transaction volume.
+-   **Third, behavioural and engagement variables are more useful than demographics for prediction.** Predictive modelling shows that satisfaction and transaction behaviour are driven more by usage, value, and account characteristics than by socio-demographics alone.
+
+## Confirmatory Analysis
+
+::: finding-section
+### ANOVA And Distributional Evidence
+
+The confirmatory analysis examined whether financial behaviour differed materially across socio-demographic groups. The visual evidence from the Shiny dashboard consistently showed the same structural pattern:
+
+-   transaction measures are **highly right-skewed**
+-   every demographic group contains **extreme high-value outliers**
+-   central tendencies across groups remain **close and heavily overlapping**
+
+This means demographic categories are helpful for description, but on their own they do not create sharply separated financial profiles.
+
+#### Education Level
+
+For **average transaction value by education level**, the non-parametric ANOVA result showed **no statistically meaningful difference** across groups:
+
+-   Kruskal-Wallis: `chi-squared(3) = 3.58`
+-   `p = 0.31`
+-   sample size: `n = 48,723`
+
+Median transaction values were nearly identical across categories:
+
+-   Bachelor: about `1.76M COP`
+-   High School: about `1.77M COP`
+-   Master: about `1.76M COP`
+-   PhD: about `1.75M COP`
+
+The transaction-count boxplots by education level also showed a common pattern of wide dispersion and heavy overlap, reinforcing that education is not a strong standalone driver of activity.
+
+#### Income Bracket
+
+For **average transaction value by income bracket**, the robust ANOVA result also indicated **no meaningful difference**:
+
+-   Robust test: `F(3, 6395.46) = 0.95`
+-   `p = 0.42`
+-   sample size: `n = 48,723`
+
+Trimmed means were again very similar:
+
+-   High: about `2.45M COP`
+-   Low: about `2.51M COP`
+-   Medium: about `2.49M COP`
+-   Very High: about `2.52M COP`
+
+Although income might be expected to separate customers more strongly, the observed financial distributions remained remarkably similar once the full spread of the data was considered.
+
+#### Gender And Marital Status
+
+The transaction-count plots by **gender** and **marital status** showed the same broad finding:
+
+-   all groups share similar medians
+-   all groups contain very large outliers
+-   no group displays a clearly dominant distribution
+
+This suggests that customer financial behaviour in the dataset is not easily explained by a single demographic dimension. Behaviour is present in every segment, but it is uneven and highly dispersed.
+:::
+
+::: finding-section
+### Association Analysis
+
+Association testing was used to assess whether binned financial behaviour was linked to demographic groups.
+
+For **average transaction value versus gender**, the result showed effectively **no association**:
+
+-   Pearson chi-squared: `0.84`
+-   `p = 0.93`
+-   Cramer's V: approximately `0.00`
+-   sample size: `n = 48,723`
+
+The stacked proportion chart confirmed this visually. Female, male, and other customers were distributed across **low**, **medium**, and **high spend** bands in almost the same proportions.
+
+This matters because it strengthens the earlier ANOVA conclusion: even when transaction value is simplified into broad spending bands, demographic grouping still does not meaningfully separate customers.
+:::
+
+## Clustering Analysis
+
+::: finding-section
+### Segment Discovery
+
+The clustering module adds the strongest behavioural insight in the project because it groups customers using their observed financial profile rather than demographic labels.
+
+From the dashboard view using **age**, **average transaction value**, and **total transaction volume**, the three-cluster solution can be interpreted as follows:
+
+| Cluster | Approx. size | Average age | Average transaction value | Total transaction volume | Interpretation |
+|------------|-----------:|-----------:|-----------:|-----------:|------------|
+| 3 | 29,122 | 36.97 | 2.42M COP | 153.71M COP | Younger mainstream users with moderate value and the largest population share |
+| 2 | 4,772 | 44.32 | 14.02M COP | 1.22B COP | Mid-aged high-value customers with exceptionally strong financial contribution |
+| 1 | 14,829 | 59.50 | 2.45M COP | 150.03M COP | Older steady users with moderate average value and lower aggregate contribution than the high-value segment |
+
+The main insight is not just that clusters exist, but that **behavioural value concentration is highly uneven**. A relatively small segment contributes disproportionately high transaction value and total volume.
+
+### What The Clusters Tell Us
+
+-   **Cluster 2 is the most commercially important segment.** Even though it is the smallest group, it has by far the highest average transaction value and total transaction volume.
+-   **Cluster 3 is the operationally dominant segment.** It is the largest group and represents the broad mainstream customer base with moderate value behaviour.
+-   **Cluster 1 appears mature but not high-spending.** This older segment behaves more steadily than explosively, suggesting retention and product-fit strategies may matter more than volume expansion.
+
+These clusters show that **customer value is better explained by behavioural grouping than by demographics alone**. In other words, age contributes to the story, but value intensity is what truly separates the segments.
+:::
+
+## Predictive Modelling
+
+::: finding-section
+### Satisfaction Score Prediction
+
+For **satisfaction score**, three regression models were compared: Decision Tree, Linear Regression, and Random Forest.
+
+| Model             | RMSE |  MAE |   R2 |
+|-------------------|-----:|-----:|-----:|
+| Decision Tree     | 0.58 | 0.43 | 0.01 |
+| Linear Regression | 0.58 | 0.43 | 0.03 |
+| Random Forest     | 0.43 | 0.32 | 0.87 |
+
+The outcome is very clear: **Random Forest is the best validation model** by a wide margin.
+
+This tells us two things:
+
+-   satisfaction is influenced by **non-linear relationships**
+-   richer combinations of customer characteristics matter more than a simple linear explanation
+
+The feature-importance chart further supports this. The strongest drivers included:
+
+-   `clv_segment_Platinum`
+-   `max_amount_eng`
+-   `avg_amount_eng`
+-   `feature_usage_diversity`
+-   `trans_count_eng`
+-   `customer_tenure`
+
+Taken together, these suggest that satisfaction is linked to a mix of **customer value tier**, **transaction intensity**, and **platform engagement**.
+
+### Transaction Behaviour Prediction
+
+For **transaction behaviour**, the target was modelled as `log1p(avg_daily_transactions)` because the original variable was heavily right-skewed.
+
+| Model             |  RMSE |  MAE |   R2 |
+|-------------------|------:|-----:|-----:|
+| Decision Tree     | 0.193 | 0.08 | 0.20 |
+| Linear Regression |  0.20 | 0.09 | 0.04 |
+| Random Forest     | 0.194 | 0.08 | 0.20 |
+
+Here the conclusion is more nuanced:
+
+-   **Decision Tree performed best by a very small margin**
+-   **Random Forest was nearly identical**
+-   **Linear Regression underperformed both non-linear models**
+
+This means transaction behaviour is harder to predict than satisfaction, and much of its variation is still unexplained by the available features.
+
+The strongest predictors shown in the dashboard were:
+
+-   `credit_utilization_ratio`
+-   `customer_tenure`
+-   `base_satisfaction`
+-   `nps_score`
+-   `app_logins_frequency`
+-   `feature_usage_diversity`
+
+So while demographics provide context, transaction behaviour is better explained by **engagement, account usage, and financial behaviour signals**.
+:::
+
+## Integrated Findings
+
+::: finding-section
+### What The Project Shows Overall
+
+When all three analytical components are read together, a coherent story emerges.
+
+#### 1. Demographics Are Descriptive, Not Deterministic
+
+Education, income, gender, and marital status help describe the customer base, but they do not by themselves create large and consistent financial differences.
+
+#### 2. Behaviour Creates The Real Separation
+
+Clustering reveals the important commercial distinction in the data: a large mainstream base, a smaller older steady group, and a compact but disproportionately valuable high-spend segment.
+
+#### 3. Engagement And Value Signals Matter Most For Prediction
+
+The predictive models repeatedly surfaced variables tied to account usage, transaction magnitude, value tier, and customer tenure. This indicates that fintech behaviour is better understood through **how customers use the platform** than through static demographic labels.
+
+#### 4. Different Outcomes Have Different Predictability
+
+Customer satisfaction was modelled much more successfully than transaction behaviour. This suggests the available variables align more strongly with customer experience than with the full complexity of day-to-day transaction activity.
+:::
+
+## Business Implications
+
+::: finding-section
+### Recommended Strategic Takeaways
+
+-   **Prioritise behavioural segmentation over demographic segmentation.** Marketing and service strategies should target usage patterns and value contribution, not just age or education groups.
+-   **Protect and grow the small high-value segment.** This cluster contributes exceptional transaction value and deserves tailored retention, premium servicing, and cross-sell strategies.
+-   **Improve engagement among mainstream customers.** Since usage diversity and app behaviour appear in the predictive results, product adoption campaigns may have a measurable downstream effect.
+-   **Treat demographics as supporting context.** They remain useful for storytelling and profiling, but not as the primary basis for decision-making.
+:::
+
+## Final Conclusion
+
+The project shows that customer behaviour in the Colombian fintech ecosystem is **heterogeneous, skewed, and behaviour-driven**. Traditional demographic comparisons reveal only limited differences, while clustering and predictive modelling uncover the stronger underlying structure of the customer base.
+
+The most important practical lesson is that **customer value emerges more clearly from behaviour, engagement, and transaction patterns than from demographics alone**. This makes behavioural analytics the most useful lens for future fintech decision-making.
+
+::: page-note
+This findings page synthesises the strongest evidence visible in the project website, Shiny dashboard outputs, and predictive-modelling workflows currently available in the repository and screenshots.
+:::
+::::::::::::::
