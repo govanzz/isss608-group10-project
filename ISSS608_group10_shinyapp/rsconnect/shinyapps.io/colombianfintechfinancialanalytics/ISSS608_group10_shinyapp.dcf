@@ -1,0 +1,13 @@
+name: ISSS608_group10_shinyapp
+title: ISSS608_group10_shinyapp
+username: colombianfintechfinancialanalytics
+account: colombianfintechfinancialanalytics
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16954145
+bundleId: 11803313
+url: https://colombianfintechfinancialanalytics.shinyapps.io/ISSS608_group10_shinyapp/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|update raw data.R
